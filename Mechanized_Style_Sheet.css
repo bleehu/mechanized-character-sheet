@@ -1,0 +1,20 @@
+.sheet-fieldset{border:solid black 1px; padding: 12px;}
+.sheet-legend{font-size: 18pt;}
+
+.sheet-mech-select-div{display: flex;  flex-flow: row wrap; background-color: #27282b; padding: 8px;}
+.sheet-mech-class{}
+.sheet-class-sheet-row{display: flex; flex-flow: row wrap;}
+.sheet-mech-class-header{flex: 5;}
+.sheet-mech-class-header > h3 {text-align: center;}
+.sheet-stats-panel{ flex: 1;}
+.sheet-pilot-panel{background-color: #799499; flex: 1;}
+.sheet-armor-panel{ flex: 1;}
+.sheet-system-panel{ flex: 2;}
+.sheet-weapon-panel{ flex: 2;}
+
+.sheet-mech-option {display: flex; align-items: center;}
+.sheet-mech-option > label {color: #f8ff33; vertical-align: center;}
+.sheet-stat-box{width:40px;}
+.sheet-armor-select{}
+.sheet-system-notes{height: 40px; width: 230px; overflow: hidden;}
+.sheet-mech-pick-label{}
