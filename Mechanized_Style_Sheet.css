@@ -1,16 +1,34 @@
-.sheet-fieldset{border:solid black 1px; padding: 12px;}
+.sheet-box{border:solid black 1px; padding: 12px;}
 .sheet-legend{font-size: 18pt;}
 
 .sheet-mech-select-div{display: flex;  flex-flow: row wrap; background-color: #27282b; padding: 8px;}
-.sheet-mech-class{}
+.sheet-mech-class{display: none;}
+input.sheet-mech-select[value="artemis"]:checked {width: 800px;}
+
+input.sheet-mech-select[value="artemis"]:checked ~ div.sheet-artemis-div {display: block;}
+
+input.sheet-mech-select[value="kratos"]:checked ~ div.sheet-kratos-div,
+input.sheet-mech-select[value="gaurdian"]:checked ~ div.sheet-gaurdian-div,
+input.sheet-mech-select[value="minotaur"]:checked ~ div.sheet-minotaur-div,
+input.sheet-mech-select[value="magni"]:checked ~ div.sheet-magni-div,
+input.sheet-mech-select[value="snotra"]:checked ~ div.sheet-snotra-div,
+input.sheet-mech-select[value="loki"]:checked ~ div.sheet-loki-div,
+input.sheet-mech-select[value="ares"]:checked ~ div.sheet-ares-div
+{
+	display: block;
+}
+
+.sheet-box{display: flex; flex-flow: column wrap; flex: 1;}
+.sheet-box > h4 {text-align: center;}
 .sheet-class-sheet-row{display: flex; flex-flow: row wrap;}
 .sheet-mech-class-header{flex: 5;}
 .sheet-mech-class-header > h3 {text-align: center;}
-.sheet-stats-panel{ flex: 1;}
-.sheet-pilot-panel{background-color: #799499; flex: 1;}
-.sheet-armor-panel{ flex: 1;}
-.sheet-system-panel{ flex: 2;}
-.sheet-weapon-panel{ flex: 2;}
+
+.sheet-stats-panel{  }
+.sheet-pilot-panel{background-color: #799499; }
+.sheet-armor-panel{  }
+.sheet-system-panel{ }
+.sheet-weapon-panel{ }
 
 .sheet-mech-option {display: flex; align-items: center;}
 .sheet-mech-option > label {color: #f8ff33; vertical-align: center;}
@@ -18,3 +36,14 @@
 .sheet-armor-select{}
 .sheet-system-notes{height: 40px; width: 230px; overflow: hidden;}
 .sheet-mech-pick-label{}
+
+.sheet-system-div{display: flex; flex-flow: column wrap;}
+.sheet-system-notes {flex: 1}
+.sheet-subsystem-input {flex: 1}
+
+.sheet-weapongroup{display: flex; flex-flow: column wrap;}
+.sheet-weapongroup-input{flex: 1;}
+.sheet-weapongroup-notes{flex: 1; }
+
+.sheet-small{font-size: 8pt;}
+
