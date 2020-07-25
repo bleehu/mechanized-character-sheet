@@ -3,10 +3,7 @@
 
 .sheet-mech-select-div{display: flex;  flex-flow: row wrap; background-color: #27282b; padding: 8px;}
 .sheet-mech-class{display: none;}
-input.sheet-mech-select[value="artemis"]:checked {width: 800px;}
-
-input.sheet-mech-select[value="artemis"]:checked ~ div.sheet-artemis-div {display: block;}
-
+input.sheet-mech-select[value="artemis"]:checked ~ div.sheet-artemis-div,
 input.sheet-mech-select[value="kratos"]:checked ~ div.sheet-kratos-div,
 input.sheet-mech-select[value="gaurdian"]:checked ~ div.sheet-gaurdian-div,
 input.sheet-mech-select[value="minotaur"]:checked ~ div.sheet-minotaur-div,
@@ -14,9 +11,8 @@ input.sheet-mech-select[value="magni"]:checked ~ div.sheet-magni-div,
 input.sheet-mech-select[value="snotra"]:checked ~ div.sheet-snotra-div,
 input.sheet-mech-select[value="loki"]:checked ~ div.sheet-loki-div,
 input.sheet-mech-select[value="ares"]:checked ~ div.sheet-ares-div
-{
-	display: block;
-}
+{display: block;}
+
 
 .sheet-box{display: flex; flex-flow: column wrap; flex: 1;}
 .sheet-box > h4 {text-align: center;}
