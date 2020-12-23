@@ -1,0 +1,43 @@
+body {background-color: #080808;}
+
+h1, h2, h3 {text-align: center; margin:8px;}
+h1 {color: #f0f0f0;}
+p, dd {font-size: 12pt;}
+
+h1 { font-size: 36pt; }
+h2 { font-size: 24pt; }
+h3 { font-size: 18pt; }
+
+p { text-indent: 16pt; }
+dt, dd {display: inline; margin: 4px; padding: 4px; }
+dt {font-weight: bold; font-size: 14pt; }
+dd { }
+
+
+
+
+.subsystem {
+	display: flex;
+	flex-flow: column wrap;
+	border: 2px solid black;
+	border-radius: 12px; 
+	padding: 8px; 
+	margin: 8px;
+	background-color: #e0e0e0;
+	width: 30%;
+	}
+
+.subsystemtype {
+	display: flex;
+	flex-flow: column wrap;
+	border: 2px solid black;
+	border-radius: 12px;
+	padding: 8px; 
+	margin: 8px;
+	background-color: #c0c0c0;
+	}
+
+.subsystemPanel {
+	display: flex;
+	flex-flow: row wrap;
+	}
