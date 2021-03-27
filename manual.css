@@ -8,13 +8,42 @@ h1 { font-size: 36pt; }
 h2 { font-size: 24pt; }
 h3 { font-size: 18pt; }
 
-p { text-indent: 16pt; }
-dt, dd {display: inline; margin: 4px; padding: 4px; }
+p { text-indent: 16pt; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+dt, dd {display: inline; margin: 4px; padding: 4px;  }
 dt {font-weight: bold; font-size: 14pt; }
 dd { }
 
+table, th, td {padding: 8px; border: 1px solid black; border-collapse: collapse;}
 
+.damage{
+	color:rgb(210, 30, 30);
+	background-color: rgb(49, 5, 5);
+}
 
+.range{
+	color:goldenrod;
+	background-color: darkslategray;
+}
+
+.cost{
+	color:rgb(137, 165, 130);
+	background-color: rgb(4, 48, 6);
+}
+
+.space{
+	color:rgb(230, 230, 230);
+	background-color: rgb(41, 41, 41);
+}
+
+.power{
+	color:rgb(110, 196, 218);
+	background-color: rgb(6, 33, 68);
+}
+
+.ammo{
+	color:rgb(163, 123, 22);
+	background-color: rgb(250, 221, 125);
+}
 
 .subsystem {
 	display: flex;
@@ -27,7 +56,7 @@ dd { }
 	width: 30%;
 	}
 
-.subsystemtype {
+.subsystemtype, .weapon {
 	display: flex;
 	flex-flow: column wrap;
 	border: 2px solid black;
@@ -36,6 +65,13 @@ dd { }
 	margin: 8px;
 	background-color: #c0c0c0;
 	}
+
+.weapon{ display:flex; flex-flow:row wrap;  }
+.weapon > h2 {width: 100%;}
+
+.weapon > dl { font-size: 16pt; display: flex; flex-flow: column wrap; }
+.weapon > dl, .weapon > p {width: 30%; }
+.weapon   dt, .weapon   dd {margin: 0px;}
 
 .subsystemPanel {
 	display: flex;
