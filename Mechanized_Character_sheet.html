@@ -1,45 +1,7 @@
-
-<!-- #region Mech Select Toolbar -->
-<div class="mech-select-div">
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="artemis" class="mech-select mech-select-artemis" selected="true">
-		<label for="mech-select-artemis">Artemis</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="kratos" class="mech-select mech-select-kratos">
-		<label for="mech-select-kratos">Kratos</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="gaurdian" class="mech-select mech-select-artemis">
-		<label for="mech-select-gaurdian">Gaurdian</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="minotaur" class="mech-select mech-select-minotaur">
-		<label for="mech-select-minotaur">Minotaur</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="magni" class="mech-select mech-select-magni">
-		<label for="mech-select-magni">Magni</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="snotra" class="mech-select mech-select-snotra">
-		<label for="mech-select-snotra">Snotra</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="loki" class="mech-select mech-select-loki">
-		<label for="mech-select-loki">Loki</label>
-	</div>
-	<div class="mech-option">
-		<input type="radio" name="attr_mech-select" value="ares" class="mech-select mech-select-ares">
-		<label for="mech-select-ares">Ares</label>
-	</div>
-</div>
-<!-- #endregion Mech Select Toolbar -->
-
 <!-- #region Pilot Panel-->
 <div class="class-sheet-row">
 	<div class="box">
-		<img src="https://secure.gravatar.com/avatar/7c7638f1ef25b0225eb199d33a092b53">
+		<img src="https://raw.githubusercontent.com/bleehu/mechanized-character-sheet/master/img/pilot-skull_56972-24.jpg">
 	</div>
 	<div class="box pilot-panel">
 		<h4 class="h4"> Pilot Stats </h4>
@@ -61,7 +23,10 @@
 
 <!--#region Start Mechs -->
 <!--#region start Artemis -->
-<div class="mech-class artemis-div">
+
+<input type="radio" name="attr_mech-select" value="artemis" class="mech-select mech-select-artemis">
+<label for="mech-select-artemis">Artemis</label>
+<div class="mech-class artemis-div" value="@{attr_mech-panel-toggle}">
 	<div class="mech-class-header">
 		<h3> Artemis Mech </h3>
 		<p>The Artemis is an adaptable standard. Great for first-time pilots.</p>
@@ -230,6 +195,9 @@
 <!--#endregion Artemis -->
 
 <!--#region start Kratos -->
+
+<input type="radio" name="attr_mech-select" value="kratos" class="mech-select mech-select-kratos">
+<label for="mech-select-kratos">Kratos</label>
 <div class="mech-class kratos-div">
 	<div class="mech-class-header">
 		<h3> Kratos Mech </h3>
@@ -375,18 +343,18 @@
 			<div class="weapongroup">
 				<p>Weapon Group 2</p>
 				<input type="text" name="attr_weapon6" class="weapon" />
-				<br />
+				<p></p>
 				<input type="text" name="attr_weapon7" class="weapon"/>
-				<br />
+				<p></p>
 				<input type="text" name="attr_weapon8" class="weapon"/>
 				<span class="small weapongroup-notes">Any</span>
 			</div>
 			<div class="weapongroup">
 				<p>Weapon Group 3</p>
 				<input type="text" name="attr_weapon9" class="weapon" />
-				<br />
+				<p></p>
 				<input type="text" name="attr_weapon10" class="weapon"/>
-				<br />
+				<p></p>
 				<input type="text" name="attr_weapon11" class="weapon"/>
 				<span class="small weapongroup-notes">Any</span>
 			</div>
@@ -405,11 +373,16 @@
 <!--#endregion Kratos -->
 
 <!--#region start Gaurdian -->
+
+<input type="radio" name="attr_mech-select" value="gaurdian" class="mech-select mech-select-artemis">
+<label for="mech-select-gaurdian">Gaurdian</label>
+
 <div class="mech-class guardian-div">
 	<div class="mech-class-header">
 		<h3> Guardian Mech </h3>
 		<p>The Guardian has the largest amount of available weapon slots, but they are mainly limited to Missile/Energy. Large mech, cannot cross bridges.</p>
 		<p><b>Special Ability:</b> "Amphibious Assault." +1 accuracy when shooting into\in\out of water.</p>
+
 	</div>
 	<div class="class-sheet-row">
 		<div class="box stats-panel">
@@ -577,6 +550,9 @@
 <!--#endregion Gaurdian -->
 
 <!--#region start Minotaur -->
+
+<input type="radio" name="attr_mech-select" value="minotaur" class="mech-select mech-select-minotaur">
+<label for="mech-select-minotaur">Minotaur</label>
 <div class="mech-class minotaur-div">
 	<div class="mech-class-header">
 		<h3> Minotaur Mech </h3>
@@ -684,7 +660,7 @@
 			<div class="system-div">
 				<label for="subsystem4">Subsystem</label>
 				<input type="text" name="attr_subsystem4" class="subsystem-input">
-				<textarea class="system-notes" name="attr_subsystem4_notes">notes for subsystem</textarea>
+				<textarea class="system-notes"  name="attr_subsystem4_notes">notes for subsystem</textarea>
 			</div>
 			<div class="system-div">
 				<label for="subsystem5">Subsystem</label>
@@ -726,7 +702,7 @@
 				<input type="text" name="attr_weapon4" class="weapon" />
 				<input type="text" name="attr_weapon5" class="weapon"/>
 				<input type="text" name="attr_weapon6" class="weapon"/>
-				<input type="text" name="attr_weapon7" class="weapon"/>
+				<input type="text" name="attr_weapon7" class="weapon" />
 				<input type="text" name="attr_weapon8" class="weapon"/>
 				<input type="text" name="attr_weapon9" class="weapon"/>
 				<span class="small weapongroup-notes">Direct Fire</span>
@@ -744,6 +720,9 @@
 <!--#endregion Minotaur -->
 
 <!--#region start Magni-->
+<input type="radio" name="attr_mech-select" value="magni" class="mech-select mech-select-magni">
+<label for="mech-select-magni">Magni</label>
+
 <div class="mech-class magni-div">
 	<div class="mech-class-header">
 		<h3> Magni Mech </h3>
@@ -866,6 +845,11 @@
 				<input type="text" name="attr_subsystem8" class="subsystem-input">
 				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
 			</div>
+			<div class="system-div">
+				<label for="subsystem9">Subsystem</label>
+				<input type="text" name="attr_subsystem9" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem9_notes">notes for subsystem</textarea>
+			</div>
 		</div>
 		<div class="box weapons-panel">
 			<h3>Weapons</h3>
@@ -905,6 +889,10 @@
 <!--#endregion Magni-->
 
 <!--#region start Snotra-->
+
+<input type="radio" name="attr_mech-select" value="snotra" class="mech-select mech-select-snotra">
+<label for="mech-select-snotra">Snotra</label>
+
 <div class="mech-class snotra-div">
 	<div class="mech-class-header">
 		<h3> Snotra Mech </h3>
@@ -1075,6 +1063,9 @@
 <!--#endregion Snotra-->
 
 <!--#region start Loki-->
+
+<input type="radio" name="attr_mech-select" value="loki" class="mech-select mech-select-loki">
+<label for="mech-select-loki">Loki</label>
 <div class="mech-class loki-div">
 	<div class="mech-class-header">
 		<h3> Loki Mech </h3>
@@ -1245,6 +1236,8 @@
 <!--#endregion Loki-->
 
 <!--#region start Ares-->
+<input type="radio" name="attr_mech-select" value="ares" class="mech-select mech-select-ares">
+<label for="mech-select-ares">Ares</label>
 <div class="mech-class ares-div">
 	<div class="mech-class-header">
 		<h3> Ares Mech </h3>
@@ -1418,5 +1411,10 @@
 </div>
 <!--#endregion Ares-->
 
-
 <!--#endregion mechs -->
+
+<!-- #region start sheetworkers-->
+
+
+<!-- #endregion sheetworkers-->
+
