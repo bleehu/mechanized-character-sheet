@@ -65,6 +65,7 @@
 	<div class="mech-class-header">
 		<h3> Artemis Mech </h3>
 		<p>The Artemis is an adaptable standard. Great for first-time pilots.</p>
+		<p><b>Special Ability:</b> "Small but Strong." +1 melee hit defense & +1 raw melee damage per melee weapon</p>
 	</div>
 	<div class="class-sheet-row">
 		<div class="box stats-panel">
@@ -83,16 +84,16 @@
 			</div>
 			<div class="stat-div">
 				<label for="max-ammo">Ammo</label>
-				<input type="text" name="attr_ammo" class="stat-box" value="10">/
-				<input type="text" name="attr_ammo_max" class="stat-box" value="10">
-				<span class="small ammo-notes">10</span>
+				<input type="text" name="attr_ammo" class="stat-box" value="15">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="15">
+				<span class="small ammo-notes">15</span>
 			</div>
 			<div class="stat-div">
 				<label for="move-speed">Move Speed</label>
 				<input type="text" name="attr_move-speed" class="stat-box" value="3">
 				<span class="small move-notes">3</span>
 			</div>
-			<span>All mechs start every round with full health, full sheilds, and full ammo.</span>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
 		</div>
 		<div class="box armor-panel">
 			<h4 class="h4">Armor Plates</h4>
@@ -146,6 +147,7 @@
 					<option value="1">Advanced Drives</option>
 					<option value="2">Tritanium Inertial Dampened Drives</option>
 					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
 				</select>
 			</div>
 			<div class="system-div">
@@ -228,21 +230,21 @@
 <!--#endregion Artemis -->
 
 <!--#region start Kratos -->
-
 <div class="mech-class kratos-div">
 	<div class="mech-class-header">
 		<h3> Kratos Mech </h3>
-		<p>The kratos is a variant of the Artemis, that features large weapon groups
-			at the cost of some .</p>
+		<p>The Kratos is a variant of the Artemis that features some larger weapon groups
+			at the cost of some separated ones, and lower health.</p>
+		<p><b>Special Ability:</b> "The Hunt." If a weapon hits the current target, +1 accuracy on that weapon on the following turn against the current target.</p>
 	</div>
 	<div class="class-sheet-row">
 		<div class="box stats-panel">
 			<h4 class="h4"> Mech Stats </h4>
 			<div class="stat-div health-div">
 				<label for="max-health">Health</label>
-				<input type="text" name="attr_health" class="stat-box" value="10">/
-				<input type="text" name="attr_health_max" class="stat-box" value="10">
-				<span class="small health-notes">10</span>
+				<input type="text" name="attr_health" class="stat-box" value="12">/
+				<input type="text" name="attr_health_max" class="stat-box" value="12">
+				<span class="small health-notes">12</span>
 			</div>
 			<div class="stat-div">
 				<label for="shields">Shields</label>
@@ -252,16 +254,16 @@
 			</div>
 			<div class="stat-div">
 				<label for="max-ammo">Ammo</label>
-				<input type="text" name="attr_ammo" class="stat-box" value="10">/
-				<input type="text" name="attr_ammo_max" class="stat-box" value="10">
-				<span class="small ammo-notes">10</span>
+				<input type="text" name="attr_ammo" class="stat-box" value="15">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="15">
+				<span class="small ammo-notes">15</span>
 			</div>
 			<div class="stat-div">
 				<label for="move-speed">Move Speed</label>
 				<input type="text" name="attr_move-speed" class="stat-box" value="3">
 				<span class="small move-notes">3</span>
 			</div>
-			<span>All mechs start every round with full health, full sheilds, and full ammo.</span>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
 		</div>
 		<div class="box armor-panel">
 			<h4 class="h4">Armor Plates</h4>
@@ -315,6 +317,7 @@
 					<option value="1">Advanced Drives</option>
 					<option value="2">Tritanium Inertial Dampened Drives</option>
 					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
 				</select>
 			</div>
 			<div class="system-div">
@@ -402,29 +405,20 @@
 <!--#endregion Kratos -->
 
 <!--#region start Gaurdian -->
-<!--#endregion Gaurdian -->
-
-<!--#region start Minotaur -->
-<!--#endregion Minotaur -->
-
-<!--#region start Magni-->
-<!--#endregion Magni-->
-
-<!--#region start Snotra-->
-<div class="mech-class snotra-div">
+<div class="mech-class guardian-div">
 	<div class="mech-class-header">
-		<h3> Snotra Mech </h3>
-		<p>Snotra is a utility mech. It has three extra subsystems, and gets a 
-			+1 defense against weapon hacking attempts and EMP attempts.</p>
+		<h3> Guardian Mech </h3>
+		<p>The Guardian has the largest amount of available weapon slots, but they are mainly limited to Missile/Energy. Large mech, cannot cross bridges.</p>
+		<p><b>Special Ability:</b> "Amphibious Assault." +1 accuracy when shooting into\in\out of water.</p>
 	</div>
 	<div class="class-sheet-row">
 		<div class="box stats-panel">
 			<h4 class="h4"> Mech Stats </h4>
 			<div class="stat-div health-div">
 				<label for="max-health">Health</label>
-				<input type="text" name="attr_health" class="stat-box" value="15">/
-				<input type="text" name="attr_health_max" class="stat-box" value="15">
-				<span class="small health-notes">15</span>
+				<input type="text" name="attr_health" class="stat-box" value="20">/
+				<input type="text" name="attr_health_max" class="stat-box" value="20">
+				<span class="small health-notes">20</span>
 			</div>
 			<div class="stat-div">
 				<label for="shields">Shields</label>
@@ -434,16 +428,16 @@
 			</div>
 			<div class="stat-div">
 				<label for="max-ammo">Ammo</label>
-				<input type="text" name="attr_ammo" class="stat-box" value="5">/
-				<input type="text" name="attr_ammo_max" class="stat-box" value="5">
-				<span class="small ammo-notes">5</span>
+				<input type="text" name="attr_ammo" class="stat-box" value="10">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="10">
+				<span class="small ammo-notes">10</span>
 			</div>
 			<div class="stat-div">
 				<label for="move-speed">Move Speed</label>
 				<input type="text" name="attr_move-speed" class="stat-box" value="2">
 				<span class="small move-notes">2</span>
 			</div>
-			<span>All mechs start every round with full health, full sheilds, and full ammo.</span>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
 		</div>
 		<div class="box armor-panel">
 			<h4 class="h4">Armor Plates</h4>
@@ -497,6 +491,179 @@
 					<option value="1">Advanced Drives</option>
 					<option value="2">Tritanium Inertial Dampened Drives</option>
 					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<h4 for="subsystem1">Subsystem</h4>
+				<input type="text" name="attr_subsystem1" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem1_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem2">Subsystem</label>
+				<input type="text" name="attr_subsystem2" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem2_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem3">Subsystem</label>
+				<input type="text" name="attr_subsystem3" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem3_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem4">Subsystem</label>
+				<input type="text" name="attr_subsystem4" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem4_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem5">Subsystem</label>
+				<input type="text" name="attr_subsystem5" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem5_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem6">Subsystem</label>
+				<input type="text" name="attr_subsystem6" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem6_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem7">Subsystem</label>
+				<input type="text" name="attr_subsystem7" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem7_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem8">Subsystem</label>
+				<input type="text" name="attr_subsystem8" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
+			</div>
+		</div>
+		<div class="box weapons-panel">
+			<h3>Weapons</h3>
+			<div class="weapongroup">
+				<p>Weapon Group 1</p>
+				<input type="text" name="attr_weapon1" class="weapon" />
+				<input type="text" name="attr_weapon2" class="weapon"/>
+				<input type="text" name="attr_weapon3" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 2</p>
+				<input type="text" name="attr_weapon4" class="weapon" />
+				<input type="text" name="attr_weapon5" class="weapon"/>
+				<input type="text" name="attr_weapon6" class="weapon"/>
+				<input type="text" name="attr_weapon7" class="weapon"/>
+				<input type="text" name="attr_weapon8" class="weapon"/>
+				<input type="text" name="attr_weapon9" class="weapon"/>
+				<span class="small weapongroup-notes">Missile or Energy</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 3</p>
+				<input type="text" name="attr_weapon10" class="weapon" />
+				<input type="text" name="attr_weapon11" class="weapon"/>
+				<input type="text" name="attr_weapon12" class="weapon"/>
+				<input type="text" name="attr_weapon13" class="weapon"/>
+				<input type="text" name="attr_weapon14" class="weapon"/>
+				<input type="text" name="attr_weapon15" class="weapon"/>
+				<span class="small weapongroup-notes">Missile or Energy</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 4</p>
+				<input type="text" name="attr_weapon16" class="weapon" />
+				<input type="text" name="attr_weapon17" class="weapon"/>
+				<input type="text" name="attr_weapon18" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!--#endregion Gaurdian -->
+
+<!--#region start Minotaur -->
+<div class="mech-class minotaur-div">
+	<div class="mech-class-header">
+		<h3> Minotaur Mech </h3>
+		<p>The Minotaur is a well-rounded, Direct-Fire mech. +1 subsystem slot</p>
+		<p><b>Special Ability:</b> "Fire and Maneuver." +1 movement if mech fired a weapon this turn.</p>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box stats-panel">
+			<h4 class="h4"> Mech Stats </h4>
+			<div class="stat-div health-div">
+				<label for="max-health">Health</label>
+				<input type="text" name="attr_health" class="stat-box" value="15">/
+				<input type="text" name="attr_health_max" class="stat-box" value="15">
+				<span class="small health-notes">15</span>
+			</div>
+			<div class="stat-div">
+				<label for="shields">Shields</label>
+				<input type="text" name="attr_shields" class="stat-box" value="0">/
+				<input type="text" name="attr_shields_max" class="stat-box" value="0">
+				<span class="small shield-notes">0</span>
+			</div>
+			<div class="stat-div">
+				<label for="max-ammo">Ammo</label>
+				<input type="text" name="attr_ammo" class="stat-box" value="20">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="20">
+				<span class="small ammo-notes">20</span>
+			</div>
+			<div class="stat-div">
+				<label for="move-speed">Move Speed</label>
+				<input type="text" name="attr_move-speed" class="stat-box" value="2">
+				<span class="small move-notes">2</span>
+			</div>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
+		</div>
+		<div class="box armor-panel">
+			<h4 class="h4">Armor Plates</h4>
+			<select name="attr_armor-1" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-2" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-3" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-4" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+		</div>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box system-panel">
+			<h4 class="h4">Subsystems</h4>
+			<div class="system-div">
+				<label for="p-generator">Primary Generator</label>
+				<select name="attr_p-generator">
+					<option value="1">lv 1 Nuclear Fusion Generator</option>
+					<option value="2">lv 2 Deuterium Tetra-Fusion</option>
+					<option value="3">lv 3 Ion Generator</option>
+					<option value="4">lv 4 Neutrino Prototype</option>
+					<option value="5">lv 5 Neutron Generator</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<label for="movement-drives">Movement Drives</label>
+				<select name="attr_movement-drives">
+					<option value="0">Standard Drives</option>
+					<option value="1">Advanced Drives</option>
+					<option value="2">Tritanium Inertial Dampened Drives</option>
+					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
 				</select>
 			</div>
 			<div class="system-div">
@@ -540,17 +707,346 @@
 				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
 			</div>
 			<div class="system-div">
+				<label for="subsystem9">Subsystem</label>
+				<input type="text" name="attr_subsystem9" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem9_notes">notes for subsystem</textarea>
+			</div>
+		</div>
+		<div class="box weapons-panel">
+			<h3>Weapons</h3>
+			<div class="weapongroup">
+				<p>Weapon Group 1</p>
+				<input type="text" name="attr_weapon1" class="weapon" />
+				<input type="text" name="attr_weapon2" class="weapon"/>
+				<input type="text" name="attr_weapon3" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 2</p>
+				<input type="text" name="attr_weapon4" class="weapon" />
+				<input type="text" name="attr_weapon5" class="weapon"/>
+				<input type="text" name="attr_weapon6" class="weapon"/>
+				<input type="text" name="attr_weapon7" class="weapon"/>
+				<input type="text" name="attr_weapon8" class="weapon"/>
+				<input type="text" name="attr_weapon9" class="weapon"/>
+				<span class="small weapongroup-notes">Direct Fire</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 3</p>
+				<input type="text" name="attr_weapon10" class="weapon" />
+				<input type="text" name="attr_weapon11" class="weapon"/>
+				<input type="text" name="attr_weapon12" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!--#endregion Minotaur -->
+
+<!--#region start Magni-->
+<div class="mech-class magni-div">
+	<div class="mech-class-header">
+		<h3> Magni Mech </h3>
+		<p>The Magni is a variant of the Minotaur mech. Features the largest Direct-Fire weapon group available but has -1 Armor Plating Slot and lower health.</p>
+		<p><b>Special Ability:</b> "Sniper." +1 accuracy after range 2. +4 raw damage for a Direct-Fire weapon, once per turn.</p>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box stats-panel">
+			<h4 class="h4"> Mech Stats </h4>
+			<div class="stat-div health-div">
+				<label for="max-health">Health</label>
+				<input type="text" name="attr_health" class="stat-box" value="12">/
+				<input type="text" name="attr_health_max" class="stat-box" value="12">
+				<span class="small health-notes">12</span>
+			</div>
+			<div class="stat-div">
+				<label for="shields">Shields</label>
+				<input type="text" name="attr_shields" class="stat-box" value="0">/
+				<input type="text" name="attr_shields_max" class="stat-box" value="0">
+				<span class="small shield-notes">0</span>
+			</div>
+			<div class="stat-div">
+				<label for="max-ammo">Ammo</label>
+				<input type="text" name="attr_ammo" class="stat-box" value="20">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="20">
+				<span class="small ammo-notes">20</span>
+			</div>
+			<div class="stat-div">
+				<label for="move-speed">Move Speed</label>
+				<input type="text" name="attr_move-speed" class="stat-box" value="2">
+				<span class="small move-notes">2</span>
+			</div>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
+		</div>
+		<div class="box armor-panel">
+			<h4 class="h4">Armor Plates</h4>
+			<select name="attr_armor-1" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-2" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-3" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+		</div>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box system-panel">
+			<h4 class="h4">Subsystems</h4>
+			<div class="system-div">
+				<label for="p-generator">Primary Generator</label>
+				<select name="attr_p-generator">
+					<option value="1">lv 1 Nuclear Fusion Generator</option>
+					<option value="2">lv 2 Deuterium Tetra-Fusion</option>
+					<option value="3">lv 3 Ion Generator</option>
+					<option value="4">lv 4 Neutrino Prototype</option>
+					<option value="5">lv 5 Neutron Generator</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<label for="movement-drives">Movement Drives</label>
+				<select name="attr_movement-drives">
+					<option value="0">Standard Drives</option>
+					<option value="1">Advanced Drives</option>
+					<option value="2">Tritanium Inertial Dampened Drives</option>
+					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<h4 for="subsystem1">Subsystem</h4>
+				<input type="text" name="attr_subsystem1" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem1_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem2">Subsystem</label>
+				<input type="text" name="attr_subsystem2" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem2_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem3">Subsystem</label>
+				<input type="text" name="attr_subsystem3" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem3_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem4">Subsystem</label>
+				<input type="text" name="attr_subsystem4" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem4_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem5">Subsystem</label>
+				<input type="text" name="attr_subsystem5" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem5_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem6">Subsystem</label>
+				<input type="text" name="attr_subsystem6" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem6_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem7">Subsystem</label>
+				<input type="text" name="attr_subsystem7" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem7_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
 				<label for="subsystem8">Subsystem</label>
+				<input type="text" name="attr_subsystem8" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
+			</div>
+		</div>
+		<div class="box weapons-panel">
+			<h3>Weapons</h3>
+			<div class="weapongroup">
+				<p>Weapon Group 1</p>
+				<input type="text" name="attr_weapon1" class="weapon" />
+				<input type="text" name="attr_weapon2" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon3" class="weapon"/>
+				<input type="text" name="attr_weapon4" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 2</p>
+				<input type="text" name="attr_weapon5" class="weapon" />
+				<input type="text" name="attr_weapon6" class="weapon"/>
+				<input type="text" name="attr_weapon7" class="weapon"/>
+				<input type="text" name="attr_weapon8" class="weapon"/>
+				<input type="text" name="attr_weapon9" class="weapon"/>
+				<input type="text" name="attr_weapon10" class="weapon"/>
+				<input type="text" name="attr_weapon11" class="weapon"/>
+				<input type="text" name="attr_weapon12" class="weapon"/>
+				<span class="small weapongroup-notes">Direct Fire</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 3</p>
+				<input type="text" name="attr_weapon13" class="weapon" />
+				<input type="text" name="attr_weapon14" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon15" class="weapon"/>
+				<input type="text" name="attr_weapon16" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!--#endregion Magni-->
+
+<!--#region start Snotra-->
+<div class="mech-class snotra-div">
+	<div class="mech-class-header">
+		<h3> Snotra Mech </h3>
+		<p>The Snotra is a utility mech. It has three extra subsystems, and gets a 
+			+1 defense against weapon hacking attempts and EMP attempts.</p>
+		<p><b>Special Ability:</b> "Modular Frame." Can cannibalize a single weapon group for an additional subsystem, free of cost.</p>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box stats-panel">
+			<h4 class="h4"> Mech Stats </h4>
+			<div class="stat-div health-div">
+				<label for="max-health">Health</label>
+				<input type="text" name="attr_health" class="stat-box" value="18">/
+				<input type="text" name="attr_health_max" class="stat-box" value="18">
+				<span class="small health-notes">18</span>
+			</div>
+			<div class="stat-div">
+				<label for="shields">Shields</label>
+				<input type="text" name="attr_shields" class="stat-box" value="0">/
+				<input type="text" name="attr_shields_max" class="stat-box" value="0">
+				<span class="small shield-notes">0</span>
+			</div>
+			<div class="stat-div">
+				<label for="max-ammo">Ammo</label>
+				<input type="text" name="attr_ammo" class="stat-box" value="10">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="10">
+				<span class="small ammo-notes">10</span>
+			</div>
+			<div class="stat-div">
+				<label for="move-speed">Move Speed</label>
+				<input type="text" name="attr_move-speed" class="stat-box" value="2">
+				<span class="small move-notes">2</span>
+			</div>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
+		</div>
+		<div class="box armor-panel">
+			<h4 class="h4">Armor Plates</h4>
+			<select name="attr_armor-1" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-2" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-3" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-4" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+		</div>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box system-panel">
+			<h4 class="h4">Subsystems</h4>
+			<div class="system-div">
+				<label for="p-generator">Primary Generator</label>
+				<select name="attr_p-generator">
+					<option value="1">lv 1 Nuclear Fusion Generator</option>
+					<option value="2">lv 2 Deuterium Tetra-Fusion</option>
+					<option value="3">lv 3 Ion Generator</option>
+					<option value="4">lv 4 Neutrino Prototype</option>
+					<option value="5">lv 5 Neutron Generator</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<label for="movement-drives">Movement Drives</label>
+				<select name="attr_movement-drives">
+					<option value="0">Standard Drives</option>
+					<option value="1">Advanced Drives</option>
+					<option value="2">Tritanium Inertial Dampened Drives</option>
+					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<h4 for="subsystem1">Subsystem</h4>
+				<input type="text" name="attr_subsystem1" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem1_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem2">Subsystem</label>
+				<input type="text" name="attr_subsystem2" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem2_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem3">Subsystem</label>
+				<input type="text" name="attr_subsystem3" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem3_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem4">Subsystem</label>
+				<input type="text" name="attr_subsystem4" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem4_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem5">Subsystem</label>
+				<input type="text" name="attr_subsystem5" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem5_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem6">Subsystem</label>
+				<input type="text" name="attr_subsystem6" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem6_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem7">Subsystem</label>
+				<input type="text" name="attr_subsystem7" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem7_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem8">Subsystem</label>
+				<input type="text" name="attr_subsystem8" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem9">Subsystem</label>
 				<input type="text" name="attr_subsystem9" class="subsystem-input">
 				<textarea class="system-notes" name="attr_subsystem9_notes">notes for subsystem</textarea>
 			</div>
 			<div class="system-div">
-				<label for="subsystem8">Subsystem</label>
+				<label for="subsystem10">Subsystem</label>
 				<input type="text" name="attr_subsystem10" class="subsystem-input">
 				<textarea class="system-notes" name="attr_subsystem10_notes">notes for subsystem</textarea>
 			</div>
 			<div class="system-div">
-				<label for="subsystem8">Subsystem</label>
+				<label for="subsystem11">Subsystem</label>
 				<input type="text" name="attr_subsystem11" class="subsystem-input">
 				<textarea class="system-notes" name="attr_subsystem11_notes">notes for subsystem</textarea>
 			</div>
@@ -566,7 +1062,7 @@
 				<span class="small weapongroup-notes">Any</span>
 			</div>
 			<div class="weapongroup">
-				<p>Weapon Group 4</p>
+				<p>Weapon Group 2</p>
 				<input type="text" name="attr_weapon5" class="weapon" />
 				<input type="text" name="attr_weapon6" class="weapon"/>
 				<input type="text" name="attr_weapon7" class="weapon"/>
@@ -579,9 +1075,347 @@
 <!--#endregion Snotra-->
 
 <!--#region start Loki-->
+<div class="mech-class loki-div">
+	<div class="mech-class-header">
+		<h3> Loki Mech </h3>
+		<p>The Loki is a variation of the Guardian mech with smaller weapon groups, but it has faster movement and starts with shields. Large mech, cannot cross bridges.</p>
+		<p><b>Special Ability:</b> "Tertiary Shield." Start with a 5 hp shield that has no energy cost.</p>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box stats-panel">
+			<h4 class="h4"> Mech Stats </h4>
+			<div class="stat-div health-div">
+				<label for="max-health">Health</label>
+				<input type="text" name="attr_health" class="stat-box" value="15">/
+				<input type="text" name="attr_health_max" class="stat-box" value="15">
+				<span class="small health-notes">15</span>
+			</div>
+			<div class="stat-div">
+				<label for="shields">Shields</label>
+				<input type="text" name="attr_shields" class="stat-box" value="5">/
+				<input type="text" name="attr_shields_max" class="stat-box" value="5">
+				<span class="small shield-notes">5</span>
+			</div>
+			<div class="stat-div">
+				<label for="max-ammo">Ammo</label>
+				<input type="text" name="attr_ammo" class="stat-box" value="0">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="0">
+				<span class="small ammo-notes">0</span>
+			</div>
+			<div class="stat-div">
+				<label for="move-speed">Move Speed</label>
+				<input type="text" name="attr_move-speed" class="stat-box" value="3">
+				<span class="small move-notes">3</span>
+			</div>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
+		</div>
+		<div class="box armor-panel">
+			<h4 class="h4">Armor Plates</h4>
+			<select name="attr_armor-1" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-2" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-3" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-4" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+		</div>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box system-panel">
+			<h4 class="h4">Subsystems</h4>
+			<div class="system-div">
+				<label for="p-generator">Primary Generator</label>
+				<select name="attr_p-generator">
+					<option value="1">lv 1 Nuclear Fusion Generator</option>
+					<option value="2">lv 2 Deuterium Tetra-Fusion</option>
+					<option value="3">lv 3 Ion Generator</option>
+					<option value="4">lv 4 Neutrino Prototype</option>
+					<option value="5">lv 5 Neutron Generator</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<label for="movement-drives">Movement Drives</label>
+				<select name="attr_movement-drives">
+					<option value="0">Standard Drives</option>
+					<option value="1">Advanced Drives</option>
+					<option value="2">Tritanium Inertial Dampened Drives</option>
+					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<h4 for="subsystem1">Subsystem</h4>
+				<input type="text" name="attr_subsystem1" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem1_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem2">Subsystem</label>
+				<input type="text" name="attr_subsystem2" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem2_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem3">Subsystem</label>
+				<input type="text" name="attr_subsystem3" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem3_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem4">Subsystem</label>
+				<input type="text" name="attr_subsystem4" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem4_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem5">Subsystem</label>
+				<input type="text" name="attr_subsystem5" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem5_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem6">Subsystem</label>
+				<input type="text" name="attr_subsystem6" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem6_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem7">Subsystem</label>
+				<input type="text" name="attr_subsystem7" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem7_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem8">Subsystem</label>
+				<input type="text" name="attr_subsystem8" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
+			</div>
+		</div>
+		<div class="box weapons-panel">
+			<h3>Weapons</h3>
+			<div class="weapongroup">
+				<p>Weapon Group 1</p>
+				<input type="text" name="attr_weapon1" class="weapon" />
+				<br />
+				<input type="text" name="attr_weapon2" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 2</p>
+				<input type="text" name="attr_weapon3" class="weapon" />
+				<input type="text" name="attr_weapon4" class="weapon"/>
+				<input type="text" name="attr_weapon5" class="weapon"/>
+				<input type="text" name="attr_weapon6" class="weapon"/>
+				<input type="text" name="attr_weapon7" class="weapon"/>
+				<span class="small weapongroup-notes">Missile or Energy</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 3</p>
+				<input type="text" name="attr_weapon8" class="weapon" />
+				<input type="text" name="attr_weapon9" class="weapon"/>
+				<input type="text" name="attr_weapon10" class="weapon"/>
+				<input type="text" name="attr_weapon11" class="weapon"/>
+				<input type="text" name="attr_weapon12" class="weapon"/>
+				<span class="small weapongroup-notes">Missile or Energy</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 4</p>
+				<input type="text" name="attr_weapon13" class="weapon" />
+				<br />
+				<input type="text" name="attr_weapon14" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+		</div>
+	</div>
+</div>
 <!--#endregion Loki-->
 
 <!--#region start Ares-->
+<div class="mech-class ares-div">
+	<div class="mech-class-header">
+		<h3> Ares Mech </h3>
+		<p>The Ares is a variation of the Minotaur mech with small and divided weapon groups, but it has +1 subsystem slot, increased ammo capacity, and +1 defense against EMP attempts.</p>
+		<p><b>Special Ability:</b> "Fury." Weapons gain a raw damage bonus equal to their weapon space, once per turn.</p>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box stats-panel">
+			<h4 class="h4"> Mech Stats </h4>
+			<div class="stat-div health-div">
+				<label for="max-health">Health</label>
+				<input type="text" name="attr_health" class="stat-box" value="20">/
+				<input type="text" name="attr_health_max" class="stat-box" value="20">
+				<span class="small health-notes">20</span>
+			</div>
+			<div class="stat-div">
+				<label for="shields">Shields</label>
+				<input type="text" name="attr_shields" class="stat-box" value="0">/
+				<input type="text" name="attr_shields_max" class="stat-box" value="0">
+				<span class="small shield-notes">0</span>
+			</div>
+			<div class="stat-div">
+				<label for="max-ammo">Ammo</label>
+				<input type="text" name="attr_ammo" class="stat-box" value="30">/
+				<input type="text" name="attr_ammo_max" class="stat-box" value="30">
+				<span class="small ammo-notes">30</span>
+			</div>
+			<div class="stat-div">
+				<label for="move-speed">Move Speed</label>
+				<input type="text" name="attr_move-speed" class="stat-box" value="2">
+				<span class="small move-notes">2</span>
+			</div>
+			<span>All mechs start every round with full health, full shields, and full ammo.</span>
+		</div>
+		<div class="box armor-panel">
+			<h4 class="h4">Armor Plates</h4>
+			<select name="attr_armor-1" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-2" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-3" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+			<select name="attr_armor-4" class="armor-select">
+				<option value="None">None</option>
+				<option value="Diffusive Mesh">Diffusive Mesh</option>
+				<option value="Reactive Plates">Reactive Plates</option>
+				<option value="E-Pulse">E-Pulse</option>
+				<option value="Chitin">Chitin</option>
+			</select>
+		</div>
+	</div>
+	<div class="class-sheet-row">
+		<div class="box system-panel">
+			<h4 class="h4">Subsystems</h4>
+			<div class="system-div">
+				<label for="p-generator">Primary Generator</label>
+				<select name="attr_p-generator">
+					<option value="1">lv 1 Nuclear Fusion Generator</option>
+					<option value="2">lv 2 Deuterium Tetra-Fusion</option>
+					<option value="3">lv 3 Ion Generator</option>
+					<option value="4">lv 4 Neutrino Prototype</option>
+					<option value="5">lv 5 Neutron Generator</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<label for="movement-drives">Movement Drives</label>
+				<select name="attr_movement-drives">
+					<option value="0">Standard Drives</option>
+					<option value="1">Advanced Drives</option>
+					<option value="2">Tritanium Inertial Dampened Drives</option>
+					<option value="3">Motion-Impulse Drives</option>
+					<option value="4">Quantum Teleporter</option>
+				</select>
+			</div>
+			<div class="system-div">
+				<h4 for="subsystem1">Subsystem</h4>
+				<input type="text" name="attr_subsystem1" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem1_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem2">Subsystem</label>
+				<input type="text" name="attr_subsystem2" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem2_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem3">Subsystem</label>
+				<input type="text" name="attr_subsystem3" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem3_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem4">Subsystem</label>
+				<input type="text" name="attr_subsystem4" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem4_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem5">Subsystem</label>
+				<input type="text" name="attr_subsystem5" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem5_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem6">Subsystem</label>
+				<input type="text" name="attr_subsystem6" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem6_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem7">Subsystem</label>
+				<input type="text" name="attr_subsystem7" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem7_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem8">Subsystem</label>
+				<input type="text" name="attr_subsystem8" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem8_notes">notes for subsystem</textarea>
+			</div>
+			<div class="system-div">
+				<label for="subsystem9">Subsystem</label>
+				<input type="text" name="attr_subsystem9" class="subsystem-input">
+				<textarea class="system-notes" name="attr_subsystem9_notes">notes for subsystem</textarea>
+			</div>
+		</div>
+		<div class="box weapons-panel">
+			<h3>Weapons</h3>
+			<div class="weapongroup">
+				<p>Weapon Group 1</p>
+				<input type="text" name="attr_weapon1" class="weapon" />
+				<br />
+				<input type="text" name="attr_weapon2" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon3" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon4" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 2</p>
+				<input type="text" name="attr_weapon5" class="weapon" />
+				<input type="text" name="attr_weapon6" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon7" class="weapon"/>
+				<input type="text" name="attr_weapon8" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+			<div class="weapongroup">
+				<p>Weapon Group 3</p>
+				<input type="text" name="attr_weapon9" class="weapon" />
+				<br />
+				<input type="text" name="attr_weapon10" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon11" class="weapon"/>
+				<br />
+				<input type="text" name="attr_weapon12" class="weapon"/>
+				<span class="small weapongroup-notes">Any</span>
+			</div>
+		</div>
+	</div>
+</div>
 <!--#endregion Ares-->
 
 
