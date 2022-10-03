@@ -86,8 +86,10 @@
                 </p>
                 <p class="rules">
                     To attack another player's mech, choose which weapon you are attacking with,
-                    then choose which mech you are attacking. Roll a for accuracy, and add up 
-                    your bonuses and penalties. See the "Rolling 
+                    then choose which mech you are attacking. You may only choose an opponent's 
+                    mech if it is a number of spaces equal to or less than the maximum range 
+                    listed on the weapon's range stat (or if you have a card that says otherwise). 
+                    Roll a for accuracy, and add up your bonuses and penalties. See the "Rolling 
                     for Accuracy Section" to see if you hit or not. If you hit, then you roll 
                     for damage. See the "rolling for damage" section below. You can attack with 
                     each of your weapons each turn. You may not attack with a weapon twice on a 
@@ -108,27 +110,39 @@
                     up on the accuracy scale below. If the number is below 5, then your attack
                     misses, and you deal no damage. If the number calculated is higher than 4, 
                     then your attack hit, and you get to roll damage (See the "roll for damage 
-                    section next"). If the calculated number is higher than 7, then not only did 
+                    section next"). 
+                </p>
+                <p class="rules">
+                    If the calculated number is higher than 7, then not only did 
                     you hit, but you were accurate enough to hit a weak point in your target's armor!
                     The numbers in the accuracy table below show how much extra damage EACH DICE you 
-                    roll for damage gains. 
+                    roll for damage gains. The damage bonus for accuracy cannot make a dice deal more 
+                    than its maximum damage. 
                 </p>
                 <img src="img/Accuracy scale.PNG" style="max-width: 400px;"/>
                 <p class="hint">
                     If Alice is shooting Bob with a Large Proton Laser, which deals 2d6 damage,
-                    and she rolls a 10, which has a +2 damage per dice bonus, then Alice deals
-                    4 extra damage to Bob because 2 bonus damage times 2 weapon dice equals 4 
-                    total bonus damage. 
+                    and her accuracy roll, penalties and bonus total 10, then she might get a +2
+                    to each of the damage dice she rolls. If she rolls a 2 and a 6, then she deals
+                    10 laser damage, since the roll of 6 cannot be improved, but the roll of 2 gets
+                    a +2 to the damage from the accuracy.  
                 </p>
             </div>
             <div class="subsystem">
                 <h3>Rolling for damage</h3>
                 <p class="rules">
-
+                    Each weapon has a stat for damage asociated with it (sometimes abreviated "dmg").
+                    When you hit, you roll the dice described in the damage section of your weapon, 
+                    add any bonuses you get from cards or subsystems, and then tell your opponent 
+                    how much total damage you dealt and what kind of damage you dealt. Damage types
+                    can be one of the following list.
                 </p>
-                <p class="hint">
-                    If 
-                </p>
+                <ul>
+                    <li>laser</li>
+                    <li>missile</li>
+                    <li>direct fire</li>
+                    <li>melee</li>
+                </ul>
             </div>
         </div>
         <div class="subsystemPanel">
@@ -169,6 +183,11 @@
                     cannot shoot through heavy forest with an additonal terrain penalty. (Terrain
                     penalties are counted up from the enemies hex to the hexes inbetween you)
                 </p>
+                <p class="rules">
+                    See the Terrain Guide for specifics on how different types of terrain affect
+                    accuracy.
+                </p>
+
             </div>
             <div class="subsystem">
                 <h3>Movement Penalties</h3>
@@ -178,22 +197,65 @@
                     aim at you!
                 </p>
                 <p class="rules">
-
+                    <b>Penalty to you:</b>
+                    Attacks on your turn suffer an accuracy penalty of one less than the number 
+                    of spaces you moved, regardless of the cost of speed of that movement. So if you
+                    moved two spaces, one space through open terrain and another through heavy forest,
+                    even though that movement cost 4 speed, you only moved 2 spaces. So your penalty 
+                    to accuracy would be -1 from your movement. If you move after your attack this turn,
+                    you have no penalty to your accuracy from your movement this turn.
                 </p>
+                <p class="rules">
+                    <b>Penalty to opponents:</b>
+                    The penalty to opponent's accuracy when attacking you is calculated based on the
+                    shortest distance between where you started your movement and where you ended it. 
+                    The penalty to an enemy's accuracy is one less than the distance in spaces between
+                    where you started and where you ended your move. So if you moved 3 spaces, your
+                    opponenets would have a -2 to hit you.
+                </p>
+                <p class="hint">
+                    If you were to run in a 3-space circle, then you would have a -2 to accuracy, but
+                    since the shortest distance between where you started an where you ended is 0, 
+                    enemies would have no penalty to shooting you.
+                </p>
+                <table>
+                    <tr>
+                        <th>Distance Traveled</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    </tr>
+                    <tr>
+                        <th>Penalty to Accuracy</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="subsystemPanel">
             <div class="subsystem">
                 <h3>Critical Hit and Miss</h3>
                 <p class="rules">
-
+                    Rolling a 1 is always a miss. Rolling a 12 is always a hit.
+                    Normal accuracy damage modifiers still apply.
                 </p>
             </div>
             <div class="subsystem">
                 <h3>Example</h3>
-                <div class="hint">
-
-                </div>
+                <p class="hint">
+                    Let's say that attacker Adam is shooting a partical cannon at
+                    target Terry. Adam is in heavy forest, and Terry is in a light
+                    forest space that is 4 spaces away from Adam. There is no 
+                    intervening terrain. Terry moved 3 spaces last turn, and has 
+                    no jammer. Adam didn't move this turn, and has a +4 targeting
+                    computer. Adam rolls a 12 on their accuracy roll.
+                </p>
+                <p class="hint">
+                    12 - 1 [Adam's terrain] - 1 [Terry's terrain] - 1 [range] - 1 [Terry's movement] 
+                    - 0 [Adam is still] - 0 [Terry has no jammer]  + 4 [Adam's targeting computer] 
+                    = 12 accuracy. Looking up 12 on the accuracy table means that each damage dice 
+                    that Adam rolls potentially could get a +3 to the damage!
+                </p>
+                <p class="hint">
+                    If Adam rolls a 3 and a 4 on his two d6s, then his total damage dealt would be
+                    12 damage, since the roll of 4 can't go over the maximum d6 roll of 6. 
+                </p>
             </div>
         </div>
     </div>
@@ -202,13 +264,21 @@
         <h2>Idling</h2>
         <div class="subsystemPanel">
             <div class="subsystem">
-                <p class="rules">
+                <p class="hint">
                     It takes a lot of energy to move your massive mech around and fire those huge guns.
                     On occasion it may be tactically advantageous to use that energy for something 
                     other than moving and shooting.
                 </p>
                 <p class="rules">
-
+                    Instead of moving and attacking, a player can spend their turn idling to 
+                    recharge 1 additonal shield level, recharge 1 battery by 1 turn of power, 
+                    AND (if they have the card, and the nanobots are not expended) repairing 
+                    with nanobots. (Passive shield regeneration can fully recharge a shield 
+                    given enough time). 
+                </p>
+                <p class="rules">
+                    A player cannot use any battery at any time during a turn if they charge 
+                    one of their batteries by idling that turn.
                 </p>
             </div>
             <div class="subsystem">
