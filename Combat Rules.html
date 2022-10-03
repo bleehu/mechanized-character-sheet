@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combat Rules</title>
+	<link rel="stylesheet" type="text/css" href="manual.css">
+</head>
+
+<body>
+	<h1>Combat Rules</h1>
+    <div class="subsystemtype">
+        <h2>On Your Turn</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    Play during combat proceeds in turns with one player after another. During 
+                    your turn, you may do one of the following five plays: move then attack, 
+                    or attack then move, or idle which is neither moving nor attacking. You may
+                    also move without attacking or attack without moving. 
+                </p>
+                <p class="hint">
+                    Some tabletop games allow you to split your move action, allowing you to move,
+                    then attack, then move again. In Mechanized, this requires a unique subsystem.
+                </p>
+            </div>
+            <div class="subsystem">
+                <img src="img/On your turn.PNG" style="max-width: 400px; border-radius:16px;"/>
+            </div>
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Moving</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules"></p>
+            </div>
+            <div class="subsystem">
+                <img src="img/Moving.png" style="max-width: 400px;"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsystemtype">
+        <h2>Firing Weapons</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    All weapons can only fire once per turn.
+                    Missiles can be fire at multiple targets in a
+                    turn, but not the same target multiple times.
+                </p>
+                <p class="rules">
+
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Rolling For accuracy</h3>
+                <p class="rules">
+
+                </p>
+                <img src="img/Accuracy scale.PNG" style="max-width: 400px;"/>
+                <p class="hint">
+                    If Alice is shooting Bob with a Large Proton Laser, which deals 2d6 damage,
+                    and she rolls a 10, which has a +2 damage per dice bonus, then Alice deals
+                    4 extra damage to Bob because 2 bonus damage times 2 weapon dice equals 4 
+                    total bonus damage. 
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Rolling for damage</h3>
+                <p class="rules">
+
+                </p>
+                <p class="hint">
+                    If 
+                </p>
+            </div>
+        </div>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <h3>Range Penalties</h3>
+                <p class="hint">
+                    The farther a target is away from you, the harder it is to hit. Certain
+                    Mech Chassis are better at taking longer range shots. Every Mech can 
+                    buy a targeting computer subsystem to make long range shots easier to
+                    land.
+                </p>
+                <p class="rules">
+
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>  Range </th> <td> 1 </td> <td> 2 </td> <td> 3 </td> <td> 4 </td> <td> 5 </td> <td> 6 </td> <td> 7 </td> <td> 8 </td>
+                        </tr>
+                        <tr>
+                            <th>  Penalty </th> <td> 0 </td> <td> 0 </td> <td> -1 </td> <td> -1 </td> <td> -2 </td> <td> -2 </td> <td> -3 </td> <td> -3 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="subsystem">
+                <h3>Terrain Penalties</h3>
+                <p class="rules">
+                    Accuracy is calculated by drawing a line from
+                    the center of your hex, to the center of your
+                    target. You take a penalty for hexes the line
+                    passes through. If the accuracy determined
+                    by a path to a target is in question, take the
+                    questionable penalties.
+                </p>
+                <p class="rules">
+                    you cannot shoot through more than 2 pieces of penalizing terrain. Also, you
+                    cannot shoot through heavy forest with an additonal terrain penalty. (Terrain
+                    penalties are counted up from the enemies hex to the hexes inbetween you)
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Movement Penalties</h3>
+                <p class="hint">
+                    The faster you move your mech, the harder it is for your pilot to aim. On the
+                    other hand, the faster you move your mech, the harder it is for opponenets to
+                    aim at you!
+                </p>
+                <p class="rules">
+
+                </p>
+            </div>
+        </div>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <h3>Critical Hit and Miss</h3>
+                <p class="rules">
+
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Example</h3>
+                <div class="hint">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsystemtype">
+        <h2>Idling</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    It takes a lot of energy to move your massive mech around and fire those huge guns.
+                    On occasion it may be tactically advantageous to use that energy for something 
+                    other than moving and shooting.
+                </p>
+                <p class="rules">
+
+                </p>
+            </div>
+            <div class="subsystem">
+                <p class="rules">
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Blowing Up & Retreating</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <h3>Nuclear Explosions</h3>
+                <p class="rules">
+                    When your hit points drop below 1, your mech is destroyed in a nuclear explosion. 
+                    To determine the size of the explosion, add the Generator Level of all of your 
+                    generators together. 
+                </p>
+                <p class="rules">
+                    The maximum distance that a nuclear explosion can deal damage is 4 spaces away 
+                    from the epicenter of the explosion.
+                </p>
+                <p class="hint">
+                    Tyler's mech is standing 3 spaces away from Abby's mech when tyler's attack 
+                    destroys it. Abby had an Ion generator (level 3), two Phased Ion secondary 
+                    generators (level 1 each), and a Light Hidron unique tertiary generator (level 2).
+                    Abby's total generator level is 7. Since Tyler's mech is 3 spaces away, 7 - 3 = 4,
+                    so Tyler's mech takes 4D4 nuclear damage from the explosion. If Charlie's mech is
+                    5 spaces away, Charlie's mech takes no damage at all; even though Abby's generator
+                    is level 7, Charlie is out of the 4 space maximum range for a nuclear explosion's 
+                    damage. 
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Retreating</h3>
+                <p class="rules">
+                    A player may decide to retreat from combat rather than fighting it out. To retreat,
+                    the player's mech must not have had weapons used on them for the last 5 turns, and 
+                    they must be on the edge of the map. 
+                </p>
+                <p class="rules">
+                    In terms of calculating victory and in determining order for reward cards at the 
+                    end of combat, the player's mech that retreated is considered to have been knocked 
+                    out of the fight at the time of retreat.
+                </p>
+                <p class="rules">
+                    Successfuly retreating gives the player an additional +5 credits during the next build phase. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Visual Inspection</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    Players can visually inspect an opponent's mech's weapon class and quantity 
+                    (ammo based, missile, etc.), and whether they have shields with line of
+                    sight (LOS), 7 hexes or less. 
+                    If they are in open terrain *Please declare to everyone, or the specifc player 
+                    you attack, what weapon(s) you are shooting them with.* Otherwise, LOS applies 
+                    at 3 range.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
