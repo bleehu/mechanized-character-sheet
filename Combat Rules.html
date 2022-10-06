@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combat Rules</title>
+	<link rel="stylesheet" type="text/css" href="manual.css">
+</head>
+
+<body>
+	<h1>Combat Rules</h1>
+    <div class="subsystemtype">
+        <h2>On Your Turn</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    Play during combat proceeds in turns with one player after another. During 
+                    your turn, you may do one of the following five plays: move then attack, 
+                    or attack then move, or idle which is neither moving nor attacking. You may
+                    also move without attacking or attack without moving. 
+                </p>
+                <p class="hint">
+                    Some tabletop games allow you to split your move action, allowing you to move,
+                    then attack, then move again. In Mechanized, this requires a unique subsystem.
+                </p>
+            </div>
+            <div class="subsystem">
+                <img src="img/On your turn.PNG" style="max-width: 400px; border-radius:16px;"/>
+            </div>
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Moving</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules"> 
+                    Each Mech has a movement drive, which gives a speed measured in 
+                    spaces. On each of your turns, if you chose to move, you may move
+                    up to that number of spaces on unobstructed terrrain. For example,
+                    if you have a move speed of 3, you could follow the red path pictured
+                    to the right.
+                </p>
+                <p class="rules"> 
+                    Some Terrain obstructs your movement, which means that it costs 
+                    more of your speed to move through it. For example, the light 
+                    forest pictured in the gold path to the right penalizes movement
+                    by 1 extra movement. As shown, the mech with a move speed of 3 
+                    can only move 2 hexes along the gold path, since moving through 
+                    the light forest took an extra space. Some terrain requires even
+                    more movement than 1 extra to move through. See the Terrain Guide
+                    rules page for specifics.
+                </p>
+            </div>
+            <div class="subsystem">
+                <p class="rules"> 
+                    As long as you have some amount of movement left at the end of your
+                    move, you can use it up to enter a hex of passable terrain. Consider
+                    the third step along the purple path shown to the right. Though
+                    the mech only has a speed of 3, and even though the mech used 2 of
+                    its 3 speed getting to that second hex, it can still move into that
+                    light forest as long as it ends its movement there. 
+                </p>
+                <p class="rules"> 
+                    See the Terrain Guide page for specific details on the penalties
+                    or bonuses to movement that each kind of terrain provides.
+                </p>
+                <p class="hint"> 
+                    Different terrain offers different penalties not only to movement,
+                    but also to your accuracy and evasion. Where you move to can often be the 
+                    difference between victory or blowing up! If you want your mech to move faster,
+                    you can buy upgrades to your movement drive subsystem during the build phase.
+                 </p>
+            </div>
+            <div class="subsystem">
+                <img src="img/Moving.png" style="max-width: 400px;"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsystemtype">
+        <h2>Firing Weapons</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    All weapons can only fire once per turn.
+                    Missiles can be fire at multiple targets in a
+                    turn, but not the same target multiple times.
+                </p>
+                <p class="rules">
+                    To attack another player's mech, choose which weapon you are attacking with,
+                    then choose which mech you are attacking. You may only choose an opponent's 
+                    mech if it is a number of spaces equal to or less than the maximum range 
+                    listed on the weapon's range stat (or if you have a card that says otherwise). 
+                    Roll a for accuracy, and add up your bonuses and penalties. See the "Rolling 
+                    for Accuracy Section" to see if you hit or not. If you hit, then you roll 
+                    for damage. See the "rolling for damage" section below. You can attack with 
+                    each of your weapons each turn. You may not attack with a weapon twice on a 
+                    turn. You may decide not to use a weapon on a turn, for example if you wish
+                    to preserve ammunition. 
+                </p>
+                <p class="rules">
+                    If your weapon requires ammunition to fire,
+                    you must pay the ammunition whether or not your attack hits.
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Rolling For accuracy</h3>
+                <p class="rules">
+                    To find out if your attack hit your opponenet, roll a 12 sided dice (often 
+                    abreviated as d12) then add up all of your bonuses to accuracy and subtract
+                    all of your penalties (sometimes called "maluses"). Look the resulting number
+                    up on the accuracy scale below. If the number is below 5, then your attack
+                    misses, and you deal no damage. If the number calculated is higher than 4, 
+                    then your attack hit, and you get to roll damage (See the "roll for damage 
+                    section next"). 
+                </p>
+                <p class="rules">
+                    If the calculated number is higher than 7, then not only did 
+                    you hit, but you were accurate enough to hit a weak point in your target's armor!
+                    The numbers in the accuracy table below show how much extra damage EACH DICE you 
+                    roll for damage gains. The damage bonus for accuracy cannot make a dice deal more 
+                    than its maximum damage. 
+                </p>
+                <img src="img/Accuracy scale.PNG" style="max-width: 400px;"/>
+                <p class="hint">
+                    If Alice is shooting Bob with a Large Proton Laser, which deals 2d6 damage,
+                    and her accuracy roll, penalties and bonus total 10, then she might get a +2
+                    to each of the damage dice she rolls. If she rolls a 2 and a 6, then she deals
+                    10 laser damage, since the roll of 6 cannot be improved, but the roll of 2 gets
+                    a +2 to the damage from the accuracy.  
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Rolling for damage</h3>
+                <p class="rules">
+                    Each weapon has a stat for damage asociated with it (sometimes abreviated "dmg").
+                    When you hit, you roll the dice described in the damage section of your weapon, 
+                    add any bonuses you get from cards or subsystems, and then tell your opponent 
+                    how much total damage you dealt and what kind of damage you dealt. Damage types
+                    can be one of the following list.
+                </p>
+                <ul>
+                    <li>laser</li>
+                    <li>missile</li>
+                    <li>direct fire</li>
+                    <li>melee</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <h3>Range Penalties</h3>
+                <p class="hint">
+                    The farther a target is away from you, the harder it is to hit. Certain
+                    Mech Chassis are better at taking longer range shots. Every Mech can 
+                    buy a targeting computer subsystem to make long range shots easier to
+                    land.
+                </p>
+                <p class="rules">
+
+                </p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>  Range </th> <td> 1 </td> <td> 2 </td> <td> 3 </td> <td> 4 </td> <td> 5 </td> <td> 6 </td> <td> 7 </td> <td> 8 </td>
+                        </tr>
+                        <tr>
+                            <th>  Penalty </th> <td> 0 </td> <td> 0 </td> <td> -1 </td> <td> -1 </td> <td> -2 </td> <td> -2 </td> <td> -3 </td> <td> -3 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="subsystem">
+                <h3>Terrain Penalties</h3>
+                <p class="rules">
+                    Accuracy is calculated by drawing a line from
+                    the center of your hex, to the center of your
+                    target. You take a penalty for hexes the line
+                    passes through. If the accuracy determined
+                    by a path to a target is in question, take the
+                    questionable penalties.
+                </p>
+                <p class="rules">
+                    you cannot shoot through more than 2 pieces of penalizing terrain. Also, you
+                    cannot shoot through heavy forest with an additonal terrain penalty. (Terrain
+                    penalties are counted up from the enemies hex to the hexes inbetween you)
+                </p>
+                <p class="rules">
+                    See the Terrain Guide for specifics on how different types of terrain affect
+                    accuracy.
+                </p>
+
+            </div>
+            <div class="subsystem">
+                <h3>Movement Penalties</h3>
+                <p class="hint">
+                    The faster you move your mech, the harder it is for your pilot to aim. On the
+                    other hand, the faster you move your mech, the harder it is for opponenets to
+                    aim at you!
+                </p>
+                <p class="rules">
+                    <b>Penalty to you:</b>
+                    Attacks on your turn suffer an accuracy penalty of one less than the number 
+                    of spaces you moved, regardless of the cost of speed of that movement. So if you
+                    moved two spaces, one space through open terrain and another through heavy forest,
+                    even though that movement cost 4 speed, you only moved 2 spaces. So your penalty 
+                    to accuracy would be -1 from your movement. If you move after your attack this turn,
+                    you have no penalty to your accuracy from your movement this turn.
+                </p>
+                <p class="rules">
+                    <b>Penalty to opponents:</b>
+                    The penalty to opponent's accuracy when attacking you is calculated based on the
+                    shortest distance between where you started your movement and where you ended it. 
+                    The penalty to an enemy's accuracy is one less than the distance in spaces between
+                    where you started and where you ended your move. So if you moved 3 spaces, your
+                    opponenets would have a -2 to hit you.
+                </p>
+                <p class="hint">
+                    If you were to run in a 3-space circle, then you would have a -2 to accuracy, but
+                    since the shortest distance between where you started an where you ended is 0, 
+                    enemies would have no penalty to shooting you.
+                </p>
+                <table>
+                    <tr>
+                        <th>Distance Traveled</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    </tr>
+                    <tr>
+                        <th>Penalty to Accuracy</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <h3>Critical Hit and Miss</h3>
+                <p class="rules">
+                    Rolling a 1 is always a miss. Rolling a 12 is always a hit.
+                    Normal accuracy damage modifiers still apply.
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Example</h3>
+                <p class="hint">
+                    Let's say that attacker Adam is shooting a partical cannon at
+                    target Terry. Adam is in heavy forest, and Terry is in a light
+                    forest space that is 4 spaces away from Adam. There is no 
+                    intervening terrain. Terry moved 3 spaces last turn, and has 
+                    no jammer. Adam didn't move this turn, and has a +4 targeting
+                    computer. Adam rolls a 12 on their accuracy roll.
+                </p>
+                <p class="hint">
+                    12 - 1 [Adam's terrain] - 1 [Terry's terrain] - 1 [range] - 1 [Terry's movement] 
+                    - 0 [Adam is still] - 0 [Terry has no jammer]  + 4 [Adam's targeting computer] 
+                    = 12 accuracy. Looking up 12 on the accuracy table means that each damage dice 
+                    that Adam rolls potentially could get a +3 to the damage!
+                </p>
+                <p class="hint">
+                    If Adam rolls a 3 and a 4 on his two d6s, then his total damage dealt would be
+                    12 damage, since the roll of 4 can't go over the maximum d6 roll of 6. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="subsystemtype">
+        <h2>Idling</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="hint">
+                    It takes a lot of energy to move your massive mech around and fire those huge guns.
+                    On occasion it may be tactically advantageous to use that energy for something 
+                    other than moving and shooting.
+                </p>
+                <p class="rules">
+                    Instead of moving and attacking, a player can spend their turn idling to 
+                    recharge 1 additonal shield level, recharge 1 battery by 1 turn of power, 
+                    AND (if they have the card, and the nanobots are not expended) repairing 
+                    with nanobots. (Passive shield regeneration can fully recharge a shield 
+                    given enough time). 
+                </p>
+                <p class="rules">
+                    A player cannot use any battery at any time during a turn if they charge 
+                    one of their batteries by idling that turn.
+                </p>
+            </div>
+            <div class="subsystem">
+                <p class="rules">
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Blowing Up & Retreating</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <h3>Nuclear Explosions</h3>
+                <p class="rules">
+                    When your hit points drop below 1, your mech is destroyed in a nuclear explosion. 
+                    To determine the size of the explosion, add the Generator Level of all of your 
+                    generators together. 
+                </p>
+                <p class="rules">
+                    The maximum distance that a nuclear explosion can deal damage is 4 spaces away 
+                    from the epicenter of the explosion.
+                </p>
+                <p class="hint">
+                    Tyler's mech is standing 3 spaces away from Abby's mech when tyler's attack 
+                    destroys it. Abby had an Ion generator (level 3), two Phased Ion secondary 
+                    generators (level 1 each), and a Light Hidron unique tertiary generator (level 2).
+                    Abby's total generator level is 7. Since Tyler's mech is 3 spaces away, 7 - 3 = 4,
+                    so Tyler's mech takes 4D4 nuclear damage from the explosion. If Charlie's mech is
+                    5 spaces away, Charlie's mech takes no damage at all; even though Abby's generator
+                    is level 7, Charlie is out of the 4 space maximum range for a nuclear explosion's 
+                    damage. 
+                </p>
+            </div>
+            <div class="subsystem">
+                <h3>Retreating</h3>
+                <p class="rules">
+                    A player may decide to retreat from combat rather than fighting it out. To retreat,
+                    the player's mech must not have had weapons used on them for the last 5 turns, and 
+                    they must be on the edge of the map. 
+                </p>
+                <p class="rules">
+                    In terms of calculating victory and in determining order for reward cards at the 
+                    end of combat, the player's mech that retreated is considered to have been knocked 
+                    out of the fight at the time of retreat.
+                </p>
+                <p class="rules">
+                    Successfuly retreating gives the player an additional +5 credits during the next build phase. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Visual Inspection</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    Players can visually inspect an opponent's mech's weapon class and quantity 
+                    (ammo based, missile, etc.), and whether they have shields with line of
+                    sight (LOS), 7 hexes or less. 
+                    If they are in open terrain *Please declare to everyone, or the specifc player 
+                    you attack, what weapon(s) you are shooting them with.* Otherwise, LOS applies 
+                    at 3 range.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
