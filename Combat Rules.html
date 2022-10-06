@@ -89,7 +89,7 @@
                     then choose which mech you are attacking. You may only choose an opponent's 
                     mech if it is a number of spaces equal to or less than the maximum range 
                     listed on the weapon's range stat (or if you have a card that says otherwise). 
-                    Roll a for accuracy, and add up your bonuses and penalties. See the "Rolling 
+                    Roll a die for accuracy, and add up your bonuses and penalties. See the "Rolling 
                     for Accuracy Section" to see if you hit or not. If you hit, then you roll 
                     for damage. See the "rolling for damage" section below. You can attack with 
                     each of your weapons each turn. You may not attack with a weapon twice on a 
@@ -98,7 +98,7 @@
                 </p>
                 <p class="rules">
                     If your weapon requires ammunition to fire,
-                    you must pay the ammunition whether or not your attack hits.
+                    you must pay the ammunition cost whether or not your attack hits.
                 </p>
             </div>
             <div class="subsystem">
@@ -122,10 +122,34 @@
                 <img src="img/Accuracy scale.PNG" style="max-width: 400px;"/>
                 <p class="hint">
                     If Alice is shooting Bob with a Large Proton Laser, which deals 2d6 damage,
-                    and her accuracy roll, penalties and bonus total 10, then she might get a +2
+                    and her accuracy roll, after penalties and bonuses totals 10, then she gets a +2
                     to each of the damage dice she rolls. If she rolls a 2 and a 6, then she deals
                     10 laser damage, since the roll of 6 cannot be improved, but the roll of 2 gets
                     a +2 to the damage from the accuracy.  
+                </p>
+            </div>
+	    <div class="subsystem">
+                <h3>Rolling For Target Lock</h3>
+                <p class="rules">
+                    Target locks (aka missile locks) are a special type of accuracy roll. You can acquire
+		    target locks at a range of 6 + computer accuracy bonus. Roll as for accuracy as normal
+		    and ignore the damage bonus. If you are successful, then you have a target lock for this turn
+		    and next turn. 
+                </p>
+                <p class="rules">
+                    With a target lock, missiles can be launched at any time during your turn (but not to the same 
+		    target twice in the same turn), provided you are within the missile's maximum range. For each missile 
+		    launched, you have to make a d6 missile accuracy roll. The target's terrain and any special cards are 
+		    the only modifiers to a missile accuracy role. Anything other than a roll of 1 (after modifiers) is a successful
+		    hit and the target takes damage. If the target has e-pulse shielding or AMS subsystems, some or all of your 
+		    successful missile hits will be shot down before the target takes damage.
+		    Rolling a 6 for missile accuracy is always a hit. Rolling a 1 is not always a miss.
+                </p>
+                <p class="hint">
+                    Alice has a target lock on Bob, and she is within 8 range for her H10 Halon Missiles. She fires all 10 missiles.
+		    Bob is in level-2-depth water, so her missile accuracy rolls take a -2. She rolls 6, 4, 6, 2, 1, 3, 5, 4, 4, & 3 thus
+		    6 missiles can hit, but Bob has an LMS subsystem. LMSs shoot down 1d6+2, Bob rolls a 1, therefore 3
+		    missiles are shot down. 3 halon missiles successfully hit for a total of 3 x 3 = 9 damage.
                 </p>
             </div>
             <div class="subsystem">
@@ -138,11 +162,17 @@
                     can be one of the following list.
                 </p>
                 <ul>
-                    <li>laser</li>
+                    <li>energy</li>
                     <li>missile</li>
-                    <li>direct fire</li>
+                    <li>ballistic</li>
                     <li>melee</li>
                 </ul>
+		<p class="rules">
+                    Energy weapons use energy but no ammo. Missile weapons have 'missile' in the name, and regular missiles cannot
+		    fire more than the number of missiles they have at the start of the round (without a special subsystem), but short
+		    range missiles can regenerate. Ballistic weapons use ammo. Melee weapons (only found in the "melee weapons" category),
+		    are adjacent-ranged, and ignore shields.
+                </p>
             </div>
         </div>
         <div class="subsystemPanel">
@@ -151,8 +181,7 @@
                 <p class="hint">
                     The farther a target is away from you, the harder it is to hit. Certain
                     Mech Chassis are better at taking longer range shots. Every Mech can 
-                    buy a targeting computer subsystem to make long range shots easier to
-                    land.
+                    buy a targeting computer subsystem to make shots easier to land.
                 </p>
                 <p class="rules">
 
@@ -180,8 +209,9 @@
                 </p>
                 <p class="rules">
                     you cannot shoot through more than 2 pieces of penalizing terrain. Also, you
-                    cannot shoot through heavy forest with an additonal terrain penalty. (Terrain
-                    penalties are counted up from the enemies hex to the hexes inbetween you)
+                    cannot shoot through heavy forest with an additonal terrain penalty. (You count
+		    the penalizing terrain limit from the enemies hex to the hexes inbetween you, 
+		    not including your hex.)
                 </p>
                 <p class="rules">
                     See the Terrain Guide for specifics on how different types of terrain affect
@@ -198,25 +228,22 @@
                 </p>
                 <p class="rules">
                     <b>Penalty to you:</b>
-                    Attacks on your turn suffer an accuracy penalty of one less than the number 
-                    of spaces you moved, regardless of the cost of speed of that movement. So if you
-                    moved two spaces, one space through open terrain and another through heavy forest,
+                    Attacks on your turn suffer an accuracy penalty of one less than the shortest distance between
+		    where you started your movement and where you ended it, regardless of the cost of speed of that
+		    movement. So if you moved two spaces, one space through open terrain and another through heavy forest,
                     even though that movement cost 4 speed, you only moved 2 spaces. So your penalty 
                     to accuracy would be -1 from your movement. If you move after your attack this turn,
                     you have no penalty to your accuracy from your movement this turn.
                 </p>
                 <p class="rules">
                     <b>Penalty to opponents:</b>
-                    The penalty to opponent's accuracy when attacking you is calculated based on the
-                    shortest distance between where you started your movement and where you ended it. 
-                    The penalty to an enemy's accuracy is one less than the distance in spaces between
-                    where you started and where you ended your move. So if you moved 3 spaces, your
-                    opponenets would have a -2 to hit you.
+                    The penalty to opponent's accuracy when attacking you is calculated in the same way.
+		    So if you moved 3 spaces, your opponenets would have a -2 to hit you.
                 </p>
                 <p class="hint">
-                    If you were to run in a 3-space circle, then you would have a -2 to accuracy, but
-                    since the shortest distance between where you started an where you ended is 0, 
-                    enemies would have no penalty to shooting you.
+                    If you were to run in a 3-space circle, the shortest distance between where you started and 
+		    where you ended is 0, enemies would have no movement penalty for shooting at you, and you would have
+		    no movement penalty for shooting at them.
                 </p>
                 <table>
                     <tr>
@@ -247,14 +274,14 @@
                     computer. Adam rolls a 12 on their accuracy roll.
                 </p>
                 <p class="hint">
-                    12 - 1 [Adam's terrain] - 1 [Terry's terrain] - 1 [range] - 1 [Terry's movement] 
+                    12 - 1 [Adam's terrain] - 1 [Terry's terrain] - 1 [range] - 2 [Terry's movement] 
                     - 0 [Adam is still] - 0 [Terry has no jammer]  + 4 [Adam's targeting computer] 
-                    = 12 accuracy. Looking up 12 on the accuracy table means that each damage dice 
-                    that Adam rolls potentially could get a +3 to the damage!
+                    = 11 accuracy. Looking up 11 on the accuracy table means that each damage dice 
+                    that Adam rolls potentially could get a +2 to the damage!
                 </p>
                 <p class="hint">
-                    If Adam rolls a 3 and a 4 on his two d6s, then his total damage dealt would be
-                    12 damage, since the roll of 4 can't go over the maximum d6 roll of 6. 
+                    If Adam rolls a 3 and a 5 on his two d6s, then his total damage dealt would be
+                    11 damage, since the roll of 5 can't go over the maximum d6 roll of 6. 
                 </p>
             </div>
         </div>
@@ -271,10 +298,10 @@
                 </p>
                 <p class="rules">
                     Instead of moving and attacking, a player can spend their turn idling to 
-                    recharge 1 additonal shield level, recharge 1 battery by 1 turn of power, 
-                    AND (if they have the card, and the nanobots are not expended) repairing 
-                    with nanobots. (Passive shield regeneration can fully recharge a shield 
-                    given enough time). 
+                    recharge an extra +5 shield stength (not to exceed the shield's limit), 
+		    recharge 1 battery by 1 turn of power, AND (if they have the card, and the
+		    nanobots are not expended) repairing with nanobots. (Passive shield regeneration
+		    can fully recharge a shield given enough time). 
                 </p>
                 <p class="rules">
                     A player cannot use any battery at any time during a turn if they charge 
@@ -296,30 +323,33 @@
                 <h3>Nuclear Explosions</h3>
                 <p class="rules">
                     When your hit points drop below 1, your mech is destroyed in a nuclear explosion. 
-                    To determine the size of the explosion, add the Generator Level of all of your 
-                    generators together. 
+                    To determine the size of the explosion, add the Generator Level (often abbreviated 
+		    as "lvl") of all of your generators together. 
                 </p>
                 <p class="rules">
                     The maximum distance that a nuclear explosion can deal damage is 4 spaces away 
-                    from the epicenter of the explosion.
+                    from the epicenter of the explosion. Damage is reduced by 1d4 for every space away 
+		    from the spaces adjacent to the epicenter. In other words, if my mech blows up adjacent
+		    to someone, they take the full nuclear explosion damage. That damage is reduced by
+		    a cumulative -1d4 for each space further away from the explosion.
                 </p>
                 <p class="hint">
-                    Tyler's mech is standing 3 spaces away from Abby's mech when tyler's attack 
+                    Tyler's mech is standing 3 spaces away from Abby's mech when Tyler's attack 
                     destroys it. Abby had an Ion generator (level 3), two Phased Ion secondary 
                     generators (level 1 each), and a Light Hidron unique tertiary generator (level 2).
-                    Abby's total generator level is 7. Since Tyler's mech is 3 spaces away, 7 - 3 = 4,
-                    so Tyler's mech takes 4D4 nuclear damage from the explosion. If Charlie's mech is
-                    5 spaces away, Charlie's mech takes no damage at all; even though Abby's generator
-                    is level 7, Charlie is out of the 4 space maximum range for a nuclear explosion's 
-                    damage. 
+                    Abby's total generator level is 7. Since Tyler's mech is 3 spaces away, and the 1st 
+		    space takes full damage, 7 - 2 = 4, so Tyler's mech takes 4d4 nuclear damage
+		    from the explosion. Charlie's mech is 5 spaces away from Abby's, thus Charlie's mech
+		    takes no damage at all; even though Abby's generator is level 7, Charlie is out of the
+		    4 space maximum range for a nuclear explosion's damage. 
                 </p>
             </div>
             <div class="subsystem">
                 <h3>Retreating</h3>
                 <p class="rules">
                     A player may decide to retreat from combat rather than fighting it out. To retreat,
-                    the player's mech must not have had weapons used on them for the last 5 turns, and 
-                    they must be on the edge of the map. 
+                    the player's mech must not have had weapon accuracy/target lock rolled against them 
+		    for the last 5 turns, and they must be on the edge of the map. 
                 </p>
                 <p class="rules">
                     In terms of calculating victory and in determining order for reward cards at the 
@@ -338,8 +368,8 @@
             <div class="subsystem">
                 <p class="rules">
                     Players can visually inspect an opponent's mech's weapon class and quantity 
-                    (ammo based, missile, etc.), and whether they have shields with line of
-                    sight (LOS), 7 hexes or less. 
+                    (ammo based, missile, etc.), and whether they have shields, with a line of
+                    sight (LOS) of 7 hexes or less. 
                     If they are in open terrain *Please declare to everyone, or the specifc player 
                     you attack, what weapon(s) you are shooting them with.* Otherwise, LOS applies 
                     at 3 range.
