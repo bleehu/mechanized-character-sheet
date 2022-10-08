@@ -1,8 +1,13 @@
+label {flex: 1;}
+
 .sheet-box{border:solid black 1px; padding: 12px;}
 .sheet-legend{font-size: 18pt;}
 
-.sheet-mech-select-div{display: flex;  flex-flow: row wrap; background-color: #27282b; padding: 8px;}
 .sheet-mech-class{display: none;}
+mech-select-bar {display: flex;  flex-flow: row wrap; background-color: #27282b; padding: 8px;}
+
+.sheet-mech-panel {display:flex; flex-wrap: wrap;}
+.sheet-mech-select {flex: auto;}
 input.sheet-mech-select[value="artemis"]:checked ~ div.sheet-artemis-div,
 input.sheet-mech-select[value="kratos"]:checked ~ div.sheet-kratos-div,
 input.sheet-mech-select[value="gaurdian"]:checked ~ div.sheet-gaurdian-div,
