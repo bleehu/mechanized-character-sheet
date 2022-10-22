@@ -22,6 +22,14 @@ table, th, td {
 	color:#f0f0f0;
 }
 
+td > img {
+	max-width: 140px;
+}
+
+td > p {
+	max-width: 320px;
+}
+
 .rules {
 	font-size: 16px;
 	color: black;
