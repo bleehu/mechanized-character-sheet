@@ -1,0 +1,15 @@
+(Z),TLZ Targeting Laser System,0,6,20,1,2,0
+,RMG Rotary Machinegun,1d4,1,3,1,1,1
+,AC5 Autocannon,2d4,3,12,2,1,1
+(+),ELZ Electron Laser,1d6,2,8,1,3,0
+(S),PC12 Plasma Cannon,1d8,3,9,3,5,0
+,PC Particle Cannon,2d6,4,17,3,5,0
+(M),SRM6 Short Range Missiles,2 x 6,2,7,1,2,0
+(L),H10 Halon Missiles,3 x 10,8,26,2,0,0
+(+),CC2 Chain Cannon,1d4,2,6,1,1,1
+,AC10 Heavy Autocannon,1d4+1d8,3,18,3,1,2
+(+),HELZ Large Electron Laser,2d4,3,12,2,4,0
+(S),PC15 Heavy Plasma Cannon,1d12,4,15,4,7,0
+,PCX Particle Beam Cannon,3d4,5,17,3,7,0
+(M),SRM15 Short Range Missiles,2 x 15,2,19,2,4,0
+(L),H16 Halon Missiles,3 x 16,8,36,3,0,0
