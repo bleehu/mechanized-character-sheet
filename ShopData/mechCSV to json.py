@@ -1,8 +1,18 @@
-import csv, json
+from ast import arg
+import csv, json, argparse
 
-def main():
+argumentParser = argparse.ArgumentParser(
+    prog="MechCSVtoJSON",
+    description="This applet takes in a csv file that contains data about " +
+    "weapons for Mechanized, the game, and turns it into .json data " +
+    "that the rules sheet can read and display."
+)
+argumentParser.add_argument('filename', help="the filename of the csv file containing weapon data.")
+
+
+def main(filename):
     weaponData = []
-    with open("tier1.csv") as csvFile:
+    with open(filename) as csvFile:
         csvData = csv.reader(csvFile)
         tier = "tier 1"
         weight = "light"
@@ -27,6 +37,16 @@ def main():
                 tier = "tier 2"
             if "Heavy Rotary Autocannon" in weapon["name"]:
                 weight = "heavy"
+            if "C20 Concussion Missiles" in weapon["name"]:
+                weight = "light"
+                tier = "tier 3"
+            if "Firestorm" in weapon["name"]:
+                weight = "light"
+                tier = "specialized"
+            if "C3 Concussion Missiles" in weapon["name"]:
+                weight = "light"
+                tier = "melee"
+
             
     
     with open("tier1.json", "w") as jsonFile:
@@ -36,9 +56,15 @@ def main():
 def guessTypeByName(weaponName):
     if "Missile" in weaponName:
         return "missile"
-    if "Plasma" in weaponName or "Laser" in weaponName or "Particle" in weaponName:
+    if "Plasma" in weaponName:
+        return "Plasma"        
+    if "Laser" in weaponName or "Particle" in weaponName:
         return "energy"
+    if "fist" in weaponName or "saw" in weaponName or "sword" in weaponName or "flamethrower" in weaponName:
+        return "melee"        
     return "ballistic"
 
 if __name__ == "__main__":
-    main()
+    commandLineArguments = argumentParser.parse_args()
+    filename = commandLineArguments.filename
+    main(filename)

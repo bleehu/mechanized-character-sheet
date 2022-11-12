@@ -41,9 +41,9 @@ td > p {
 	color: #111111;
 }
 
-.damage{
-	color:rgb(210, 30, 30);
-	background-color: rgb(49, 5, 5);
+.damage, .missile{
+	color:rgb(210, 60, 60);
+	background-color: rgb(59, 15, 15);
 }
 
 .range{
@@ -51,7 +51,7 @@ td > p {
 	background-color: darkslategray;
 }
 
-.cost{
+.cost, .Plasma {
 	color:rgb(137, 165, 130);
 	background-color: rgb(4, 48, 6);
 }
@@ -61,14 +61,24 @@ td > p {
 	background-color: rgb(41, 41, 41);
 }
 
-.power{
+.power, .energy{
 	color:rgb(110, 196, 218);
 	background-color: rgb(6, 33, 68);
 }
 
-.ammo{
-	color:rgb(163, 123, 22);
-	background-color: rgb(250, 221, 125);
+.ammo, .ballistic{
+	color:rgb(152, 112, 11);
+	background-color: rgb(248, 229, 165);
+}
+
+.light {
+	color:rgb(80,80,80);
+	background-color: rgb(180, 180, 180);
+}
+
+.heavy {
+	color:rgb(180, 180, 180);
+	background-color: rgb(50, 50, 50);
 }
 
 table, tbody, thead, tr, th, td, .subsystem, .subsystemtype{
@@ -105,3 +115,8 @@ table, tbody, thead, tr, th, td, .subsystem, .subsystemtype{
 	display: flex;
 	flex-flow: row wrap;
 	}
+
+.weaponTraitParagraph {
+	max-width: 450px;
+	font-size: 11pt;
+}
