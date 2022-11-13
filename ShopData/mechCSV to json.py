@@ -40,6 +40,8 @@ def main(filename):
             if "C20 Concussion Missiles" in weapon["name"]:
                 weight = "light"
                 tier = "tier 3"
+            if "Heavy Polaron Cannon" in weapon["name"]:
+                weight = "heavy"
             if "Firestorm" in weapon["name"]:
                 weight = "light"
                 tier = "specialized"
@@ -58,7 +60,7 @@ def guessTypeByName(weaponName):
         return "missile"
     if "Plasma" in weaponName:
         return "Plasma"        
-    if "Laser" in weaponName or "Particle" in weaponName:
+    if "Laser" in weaponName or "Particle" in weaponName or "Polaron" in weaponName or "Ion" in weaponName:
         return "energy"
     if "fist" in weaponName or "saw" in weaponName or "sword" in weaponName or "flamethrower" in weaponName:
         return "melee"        

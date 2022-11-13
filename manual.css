@@ -13,6 +13,11 @@ dt, dd {display: inline; margin: 4px; padding: 4px;  }
 dt {font-weight: bold; font-size: 14pt; }
 dd { }
 
+input {
+	padding: 4px;
+	margin:4px;
+}
+
 
 table, th, td {
 	padding: 8px; 
@@ -81,7 +86,7 @@ td > p {
 	background-color: rgb(50, 50, 50);
 }
 
-table, tbody, thead, tr, th, td, .subsystem, .subsystemtype{
+table, tbody, thead, tr, th, td, input, .subsystem, .subsystemtype{
 	border-radius: 12px; 
 }
 
