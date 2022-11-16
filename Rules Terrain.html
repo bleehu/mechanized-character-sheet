@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terrain Rules</title>
+        <link rel="stylesheet" type="text/css" href="manual.css">
+    </head>
+
+    <body>
+        <h1>Terrain Rules</h1>
+        
+        <div class="subsystemtype">
+            <div class="subsystempanel">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Shooting Out</th>
+                            <th>Shooting In</th>
+                            <th>Moving Penalty</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/3 Small grass.png">
+                                <p>Open Terrain</p>
+                            </td>
+                            <td> None </td> <td> None </td> <td> None </td> <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/forest light sing.png">
+                                <p>Light Forest</p>
+                            </td>
+                            <td> 0 </td> <td> -1 </td> <td> 1 Hex </td> <td>   </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/forest heavy single.png">
+                                <img src="img/terrain/Forest heavy single c.png">
+                                <p>Heavy Forest</p>
+                            </td>
+                            <td> -1 </td> <td> -2 </td> <td> 2 Hexes </td> <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/Shallow Water Small.png">
+                                <p>Shallow Water</p>
+                            </td>
+                            <td> -1 </td> <td> -1 </td> <td> 1 Hex </td> <td> Reduces incoming nuclear damage by 1d4. </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/Medium Water Small.png">
+                                <p>Medium Water</p>
+                            </td>
+                            <td> -2 </td> <td> -2 </td> <td> 2 Hexes </td> <td> Reduces incoming nuclear damage by 2d4. </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/Deep Water Small.png">
+                                <p>Deep Water</p>
+                            </td>
+                            <td> -3 </td> <td> -3 </td> <td> 3 Hexes </td> 
+                            <td> <p>
+                                Reduces incoming nuclear damage by 3d4. The intense pressure of water at this depth deals 1d4
+                                damage that ignores shields at the end of the player's turn. 
+                            </p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/rubble high def.png">
+                                <p>Rubble</p>
+                            </td>
+                            <td> 0 </td> <td> -2 </td> <td> 4 Hexes </td> <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/rough.png">
+                                <p>Rough Terrain</p>
+                            </td>
+                            <td> None </td> <td> None </td> <td> 4 Hexes </td> <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/heavy buildings hex.png">
+                                <p>Buildings</p>
+                            </td>
+                            <td> +2 </td> <td> Cannot be shot through </td> <td> Cannot be moved through </td> <td><p> 
+                                Buildings cannot be moved through or shot through. A mech with Jump Jets or the Quantumn
+                                Teleporter can get on top of buildings. While on top of a building, a mech has a +1 to 
+                                accuracy rolls, and all mechs targeting it get a +1. 
+                            </p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/lava.png">
+                                <p>Lava</p>
+                            </td>
+                            <td> -1 </td> <td> -1 </td> <td> 1 Hex </td> <td><p> 
+                                For each lava hex entered, a mech takes 2d4+1 damage of the same type as flamethrowers.
+                            </p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/Powerplant.png">
+                                <p>Nuclear Power Plant</p>
+                            </td>
+                            <td> 0 </td> <td> 0 </td> <td> 0 </td> <td> <p>
+                                The Nuclear Power Plant has 10 hp. If you destroy the power plant, it explodes as if it has a 
+                                generator level = 2+ (2* round#).
+                            </p> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/terrain/Nuclear Sub.png">
+                                <p>Nuclear Submarine</p>
+                            </td>
+                            <td> 0 </td> <td> 0 </td> <td> 0 </td> <td> <p>
+                                The Nuclear Sub has 10 hp. If you destroy the sub, it explodes as if it has a 
+                                generator level = 3 + (2* round#).
+                            </p>  </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

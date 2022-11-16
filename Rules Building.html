@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Building Rules</title>
+	<link rel="stylesheet" type="text/css" href="manual.css">
+</head>
+
+<body>
+	<h1>Building and Buying Rules</h1>
+    <div class="subsystemtype">
+        <h2>Buying And Selling</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules"> <b>Getting Credits:</b>
+                    At the beginning of the Build Phase, each player gets an allowance of new credits 
+                    depending on what turn it is and how well they did in the last round. As a small 
+                    compensation for getting first pick of cards, the winner gets -10 income. All players 
+                    in the middle get -5 income, and the player that died first gets the full amount.
+                </p>
+                <table>
+                    <thead>
+                        <th>Round</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Income:</th>
+                            <td>40</td>
+                            <td>80</td>
+                            <td>120</td>
+                            <td>125</td>
+                            <td>130</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="rules">
+                    At the start of round 1, everyone gets the full payout.
+                </p>
+            </div>
+            <div class="subsystem">
+                <p class="rules"><b>Buying:</b>
+                    To get the weapons that you'll need to blow up other player's Mechs, and to get the 
+                    subsystems that you'll need to keep from being blown up, you'll spend the credits
+                    you have at the market to buy them. There are four handouts that detail all of the
+                    equipment in the game. You can look at them at any time, but you can only buy from
+                    them and put the equipment on your Mech during the Building phase.
+                </p>
+                <p class="rules">
+                    Most weapons and subsystems have unlimited stock, and will never sell out. The 
+                    number of such equipment you can equip on your Mech is limited only by the
+                    credits you have to spend on them and the space you have in your Mech. 
+                    <b>Unique Weapons and Subsystems</b> on the other hand require a card to unlock,
+                    and only have in stock the number that's in parentheses above their name on the
+                    unique subsystems page.
+                </p>
+            </div>
+            <div class="subsystem">
+            <p class="rules"><b>Selling:</b> 
+                If you have weapons or subsystems that you don't want to use anymore, you can 
+                sell them back to the market. Unless you have a card that says otherwise, when 
+                you sell a weapon or subsystem, you get 50% of the market price, round down. 
+            </p>
+            <p class="rules">
+                You cannot sell more than 4 weapons in a round. However, you can unequip weapons
+                and/or equipment round by leaving it unused in your mech garage.
+            </p>
+            <p class="hint">
+                So for example if you were selling a 17 credit Particle Cannon, then you'd get
+                8 credits back. Some cards change the rate at which you can sell if you have
+                them in your hand.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="subsystemtype">
+        <h2>Building Your Mech</h2>
+        <div class="subsystemPanel">
+            <div class="subsystem">
+                <p class="rules">
+                    <b>Building:</b>
+                    It is possible to build a Mech without equipping any weapons because empty weapon groups
+                    are fitted with a exotritanium fist by default.
+                </p>
+            </div>
+            <div class="subsystem">
+                <p class="rules">
+                    <b>Power:</b>
+                    Most subsystems and weapons have a power cost listed. This is the amount of energy that
+                    your mech needs to generate in order to use that weapon or subsystem. If a weapon or 
+                    subsystem doesn't list a power cost, it is safe to assume the power cost is zero.
+                </p>
+                <p class="rules">
+                    Your mech has a constant power level provided by your generators (and maybe your pilot
+                    class). Some equipment, like batteries, can temporarily increase your power level should
+                    you choose to use them in that way. You may only use weapons and equipment that are 
+                    equiped to your mech if you have sufficient power to do so. 
+                </p>
+                
+                <p class="hint">
+                    It is generally advisable to simply run enough constant power to run all of your systems.
+                </p>
+                <p class="hint">
+                    For example, let's say Trevor's mech has a Level 2 TFG primary power generator (which 
+                    generates 12 power) and a PIG secondary generator (which generates 16 power), so Trevor's
+                    power level is 28. So Trevor could power a T2 Computer Control System (which takes 14 power)
+                    and a PES-5 Plasma Energy Shield (which also takes 14 power), but then he could not power his
+                    PC Particle Cannon (which takes 5 power). Even though Trevor doesn't have enough power to 
+                    run all of his weapons and systems, he could still decide to play this way. Trevor could 
+                    simply re-route his power from his computer to his Particle Cannon at the start of his turn,
+                    but if he did that, then the computer's bonus to accuracy wouldn't be granted when he fired,
+                    since the computer would then be turned off.
+                </p>
+            </div>
+            <div class="subsystem">
+                <p class="rules">
+                    <b>Weapon Groups:</b>
+                    Each weapon lists a space requirment, this is the size of the weapon measured in weapon slots.
+                    To equip a weapon on your mech, you must allocate the number of weapon slots on your mech
+                    equal to the size of the given weapon. Furthermore, the slots that you allocate must be 
+                    connected to each other. You can't take apart a large laser, put the inductors in your Mech's
+                    shoulder and the barrel on your Mech's legs and expect it to work! 
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
