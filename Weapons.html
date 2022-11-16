@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weapons</title>
+        <link rel="stylesheet" type="text/css" href="manual.css">
+        <script type="text/javascript" src="ShopData/tier1.json"></script>
+        
+        <script type="text/javascript" src="javascript/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="javascript/weapons.js"></script>
+
+    </head>
+
+    <body>
+        <h1>Weapons</h1>
+        <div class="subsystemtype">
+            <form>
+                <input type="button" value="Show All" id="showAllButton" class="space"/>
+                <input type="button" value="Light Only" id="lightOnlyButton" class="light"/>
+                <input type="button" value="Heavy Only" id="heavyOnlyButton" class="heavy"/>
+                <input type="button" value="Energy Only" id="energyOnlyButton" class="power"/>
+                <input type="button" value="Plasma Only" id="plasmaOnlyButton" class="Plasma"/>
+                <input type="button" value="Ballistic Only" id="ballisticOnlyButton" class="ammo"/>
+                <input type="button" value="Missiles Only" id="missilesOnlyButton" class="damage"/>
+                <p>Price limit:</p>
+                <input id="priceLimitInput" />
+            </form>
+        </div>
+        <div class="subsystemtype">
+            <h2>Tier 1 Weapons</h2>
+            <div class="subsystemPanel" id="t1WeaponsPanel">
+
+            </div>
+        </div>
+
+        <div class="subsystemtype">
+            <h2>Tier 2 Weapons</h2>
+            <div class="subsystemPanel" id="t2WeaponsPanel">
+
+            </div>
+        </div>
+
+        <div class="subsystemtype">
+            <h2>Tier 3 Weapons</h2>
+            <div class="subsystemPanel" id="t3WeaponsPanel">
+
+            </div>
+        </div>
+
+        <div class="subsystemtype">
+            <h2>Specialized Weapons</h2>
+            <div class="subsystemPanel" id="specialWeaponsPanel">
+
+            </div>
+        </div>
+
+        <div class="subsystemtype">
+            <h2>Melee Weapons</h2>
+            <div class="subsystemPanel" id="meleeWeaponsPanel">
+
+            </div>
+        </div>
+
+    </body>
+</html>
