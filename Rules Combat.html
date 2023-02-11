@@ -19,7 +19,8 @@
                 </p>
                 <p class="hint">
                     Some tabletop games allow you to split your move action, allowing you to move,
-                    then attack, then move again. In Mechanized, this requires a unique subsystem.
+                    then attack, then move again. In Mechanized, this requires a unique subsystem
+					(called a Grav-Pulse drive).
                 </p>
             </div>
             <div class="subsystem">
@@ -34,7 +35,7 @@
                 <p class="rules"> 
                     Each Mech has a movement drive, which gives a speed measured in 
                     spaces. On each of your turns, if you chose to move, you may move
-                    up to that number of spaces on unobstructed terrrain. For example,
+                    up to that number of spaces on unobstructed terrain. For example,
                     if you have a move speed of 3, you could follow the red path pictured
                     to the right.
                 </p>
@@ -50,8 +51,7 @@
                 </p>
                 <p class="rules">
                     You cannot move through spaces occupied by enemies. If you are playing
-                    a team game, then you can move through friendly spaces with no additional
-                    penalty.
+                    a team game, then you can move through friendly spaces unobstructed.
                 </p>
             </div>
             <div class="subsystem">
@@ -68,7 +68,7 @@
                     or bonuses to movement that each kind of terrain provides.
                 </p>
                 <p class="hint"> 
-                    Different terrain offers different penalties not only to movement,
+                    Different terrains offer different penalties - not only to movement,
                     but also to your accuracy and evasion. Where you move to can often be the 
                     difference between victory or blowing up! If you want your mech to move faster,
                     you can buy upgrades to your movement drive subsystem during the build phase.
@@ -85,9 +85,8 @@
         <div class="subsystemPanel">
             <div class="subsystem">
                 <p class="rules">
-                    All weapons can only fire once per turn.
-                    Missiles can be fire at multiple targets in a
-                    turn, but not the same target multiple times.
+                    All weapons can only fire once per turn, and you can choose which
+					target(s) to fire your weapons at.
                 </p>
                 <p>
                     When you fire multiples of the same kind of weapon
@@ -101,12 +100,16 @@
                     To attack another player's mech, choose which weapon you are attacking with,
                     then choose which mech you are attacking. You may only choose an opponent's 
                     mech if it is a number of spaces equal to or less than the maximum range 
-                    listed on the weapon's range stat (or if you have a card that says otherwise). 
+                    listed on the weapon's range stat (or if you have a card that says otherwise) and
+					the target is within your Line-Of-Sight (LOS). You have LOS to the target if 
+					they are within weapons/targeting range or LOS applies at range 6, whichever 
+					is greater (if you can't target them with weapons then you do not have LOS, as 
+					is the case when there is a lot of terrain in-between you and your opponent).
                     Roll a die for accuracy, and add up your bonuses and penalties. See the "Rolling 
                     for Accuracy Section" to see if you hit or not. If you hit, then you roll 
                     for damage. See the "rolling for damage" section below. You can attack with 
                     each of your weapons each turn. You may not attack with a weapon twice on a 
-                    turn. You may decide not to use a weapon on a turn, for example if you wish
+                    turn. You may decide not to use a weapon on a turn if, for example, you wish
                     to preserve ammunition. 
                 </p>
                 <p class="rules">
@@ -117,8 +120,8 @@
             <div class="subsystem">
                 <h3>Rolling For accuracy</h3>
                 <p class="rules">
-                    To find out if your attack hit your opponenet, roll a 12 sided dice (often 
-                    abreviated as d12) then add up all of your bonuses to accuracy and subtract
+                    To find out if your attack hit your opponent, roll a 12 sided dice (often 
+                    abbreviated as d12) then add up all of your bonuses to accuracy and subtract
                     all of your penalties (sometimes called "maluses"). Look the resulting number
                     up on the accuracy scale below. If the number is below 5, then your attack
                     misses, and you deal no damage. If the number calculated is higher than 4, 
@@ -130,7 +133,7 @@
                     you hit, but you were accurate enough to hit a weak point in your target's armor!
                     The numbers in the accuracy table below show how much extra damage EACH DICE you 
                     roll for damage gains. The damage bonus for accuracy cannot make a dice deal more 
-                    than its maximum damage. 
+                    than its maximum damage.
                 </p>
                 <img src="img/Accuracy scale.PNG" style="max-width: 400px;"/>
                 <p class="hint">
@@ -144,25 +147,21 @@
             <div class="subsystem">
                 <h3>Rolling For Target Lock</h3>
                 <p class="rules">
-                    Target locks (aka missile locks) are a special type of accuracy roll. You can acquire
-		    target locks at a range of 6 + computer accuracy bonus. Roll as for accuracy as normal
-		    and ignore the damage bonus. If you are successful, then you have a target lock for this turn
-		    and next turn. 
+				Target locks (aka missile locks) are a special type of accuracy roll. Roll accuracy as normal
+			and ignore the damage bonus. If you are successful, then you have a target lock for this turn
+			and next turn. You can roll multiple target locks in a single turn (before you fire a weapon).
                 </p>
                 <p class="rules">
                     With a target lock, missiles can be launched at any time during your turn (but not to the same 
-		    target twice in the same turn), provided you are within the missile's maximum range. For each missile 
-		    launched, you have to make a d6 missile accuracy roll. The target's terrain and any special cards are 
-		    the only modifiers to a missile accuracy role. Anything other than a roll of 1 (after modifiers) is a successful
-		    hit and the target takes damage. If the target has e-pulse shielding or AMS subsystems, some or all of your 
-		    successful missile hits will be shot down before the target takes damage.
-		    Rolling a 6 for missile accuracy is always a hit. Rolling a 1 is not always a miss.
+		    target twice in the same turn), provided you are within the missile's maximum range. Each Missile damage die
+			gets an innate +3 (up to maximum die size) minus the target's terrain (and any special cards). If the target has 
+			Hardened Armor Plating or AMS subsystems, some or all of the damage will be negated.
                 </p>
                 <p class="hint">
-                    Alice has a target lock on Bob, and she is within 8 range for her H10 Halon Missiles. She fires all 10 missiles.
-		    Bob is in level-2-depth water, so her missile accuracy rolls take a -2. She rolls 6, 4, 6, 2, 1, 3, 5, 4, 4, & 3 thus
-		    6 missiles can hit, but Bob has an LMS subsystem. LMSs shoot down 1d6+2, Bob rolls a 1, therefore 3
-		    missiles are shot down. 3 halon missiles successfully hit for a total of 3 x 3 = 9 damage.
+                    Alice has a target lock on Bob, and she is within 8 range for her H10 Halon Missiles (2d8 damage). She fires.
+		    Bob is in level-2-depth water, so her missile damage rolls take a -2. She rolls 6 & 4 (6+3-2 and 4+3-2 added together totals
+			11 damage) but Bob has an LMS subsystem. LMSs reduce damage by 1d4+1, Bob rolls a 1, thus damage is reduced by 2 for a total of 
+			9 damage taken.
                 </p>
             </div>
         </div>
@@ -172,7 +171,8 @@
                 <p class="hint">
                     The farther a target is away from you, the harder it is to hit. Certain
                     Mech Chassis are better at taking longer range shots. Every Mech can 
-                    buy a targeting computer subsystem to make shots easier to land.
+                    buy a better Computer Control System, Targeting Computer, or Battery subsystem 
+					(to temporarily boost Computers) to make shots easier to land.
                 </p>
                 <p class="rules">
 
@@ -199,10 +199,8 @@
                     questionable penalties.
                 </p>
                 <p class="rules">
-                    you cannot shoot through more than 2 pieces of penalizing terrain. Also, you
-                    cannot shoot through heavy forest with an additonal terrain penalty. (You count
-                    the penalizing terrain limit from the enemies hex to the hexes inbetween you, 
-                    not including your hex.)
+                    You cannot shoot through more than 1 piece of penalizing terrain. (You count
+                    penalizing terrain from the enemies hex to the hexes in-between you, not including your hex.)
                 </p>
                 <p class="rules">
                     See the Terrain Guide for specifics on how different types of terrain affect
@@ -214,7 +212,7 @@
                 <h3>Movement Penalties</h3>
                 <p class="hint">
                     The faster you move your mech, the harder it is for your pilot to aim. On the
-                    other hand, the faster you move your mech, the harder it is for opponenets to
+                    other hand, the faster you move your mech, the harder it is for opponents to
                     aim at you!
                 </p>
                 <p class="rules">
@@ -228,11 +226,9 @@
                 </p>
                 <p class="rules">
                     <b>Penalty to opponents:</b>
-                    The penalty to opponent's accuracy when attacking you is calculated based on the
-                    shortest distance between where you started your movement and where you ended it. 
-                    The penalty to an enemy's accuracy is one less than the distance in spaces between
-                    where you started and where you ended your move. So if you moved 3 spaces, your
-                    opponenets would have a -2 to hit you.
+                    The penalty to opponent's accuracy when attacking you is calculated the same as the penalty to you
+					(unless you have special cards). So, if you moved 3 spaces, your
+                    opponents would have a -2 to hit you.
                 </p>
                 <p class="hint">
                     If you were to run in a 3-space circle, the shortest distance between where you started and 
@@ -253,7 +249,7 @@
             <div class="subsystem">
                 <h3>Rolling for damage</h3>
                 <p class="rules">
-                    Each weapon has a stat for damage asociated with it (sometimes abreviated "dmg").
+                    Each weapon has a stat for damage associated with it (sometimes abbreviated "dmg").
                     When you hit, you roll the dice described in the damage section of your weapon, 
                     add any bonuses you get from cards or subsystems, and then tell your opponent 
                     how much total damage you dealt and what kind of damage you dealt. Damage types
@@ -264,12 +260,12 @@
                     <li>missile</li>
                     <li>ballistic</li>
                     <li>melee</li>
+					<li>nuclear</li>
                 </ul>
                 <p class="rules">
                     Energy weapons use energy but no ammo. Missile weapons have 'missile' in the name, and regular missiles cannot
-		    fire more than the number of missiles they have at the start of the round (without a special subsystem), but short
-		    range missiles can regenerate. Ballistic weapons use ammo. Melee weapons (only found in the "melee weapons" category),
-		    are adjacent-ranged, and ignore shields.
+		    fire more than 2 salvos (without a special subsystem). Ballistic weapons use ammo. Melee weapons (only found in the 
+			"melee weapons" category), are adjacent-ranged, and ignore shields.
                 </p>
             </div>
             <div class="subsystem">
@@ -282,12 +278,12 @@
             <div class="subsystem">
                 <h3>Example</h3>
                 <p class="hint">
-                    Let's say that attacker Adam is shooting a partical cannon at
+                    Let's say that attacker Adam is shooting a particle cannon at
                     target Terry. Adam is in heavy forest, and Terry is in a light
                     forest space that is 4 spaces away from Adam. There is no 
                     intervening terrain. Terry moved 3 spaces last turn, and has 
-                    no jammer. Adam didn't move this turn, and has a +4 targeting
-                    computer. Adam rolls a 12 on their accuracy roll.
+                    no jammer. Adam didn't move this turn, and has a +4 computer 
+					control system. Adam rolls a 12 on their accuracy roll.
                 </p>
                 <p class="hint">
                     12 - 1 [Adam's terrain] - 1 [Terry's terrain] - 1 [range] - 2 [Terry's movement] 
@@ -296,8 +292,9 @@
                     that Adam rolls potentially could get a +2 to the damage!
                 </p>
                 <p class="hint">
-                    If Adam rolls a 3 and a 5 on his two d6s, then his total damage dealt would be
-                    11 damage, since the roll of 5 can't go over the maximum d6 roll of 6. 
+                    If Adam rolls a 3 and a 7 on his two d8s, then his total damage dealt would be
+                    3+2 and 7+1 for 13 total damage, since the roll of 7 can't go over the maximum d8 
+					roll of 8. 
                 </p>
             </div>
         </div>
@@ -314,7 +311,7 @@
                 </p>
                 <p class="rules">
                     Instead of moving and attacking, a player can spend their turn idling to 
-                    recharge an extra +5 shield stength (not to exceed the shield's limit), 
+                    recharge an extra +5 shield strength (not to exceed the shield's limit), 
                     recharge 1 battery by 1 turn of power, AND (if they have the card, and the
                     nanobots are not expended) repairing with nanobots. (Passive shield regeneration
                     can fully recharge a shield given enough time). 
@@ -339,11 +336,11 @@
                 <h3>Nuclear Explosions</h3>
                 <p class="rules">
                     When your hit points drop below 1, your mech is destroyed in a nuclear explosion. 
-                    To determine the size of the explosion, add the Generator Level (oft abreviated as 
-                    "lvl") of all of your generators together. 
+                    To determine the size of the explosion, add the Generator Tier (oft abbreviated as 
+                    "T#") of all of your generators together. 
                 </p>
                 <p class="rules">
-                    The maximum distance that a nuclear explosion can deal damage is 4 spaces away 
+                    The maximum distance that a nuclear explosion can deal damage is 3 spaces away 
                     from the epicenter of the explosion. Damage is reduced by 1d4 for every space away 
                     from the spaces adjacent to the epicenter. In other words, if my mech blows up adjacent
                     to someone, they take the full nuclear explosion damage. That damage is reduced by
@@ -351,13 +348,13 @@
                 </p>
                 <p class="hint">
                     Tyler's mech is standing 3 spaces away from Abby's mech when Tyler's attack 
-                    destroys it. Abby had an Ion generator (level 3), two Phased Ion secondary 
-                    generators (level 1 each), and a Light Hidron unique tertiary generator (level 2).
-                    Abby's total generator level is 7. Since Tyler's mech is 3 spaces away,  and the 1st 
+                    destroys it. Abby had an Ion generator (T3), two Phased Ion secondary 
+                    generators (T1 each), and a Light Hidron unique tertiary generator (T2).
+                    Abby's total generator tier is 7. Since Tyler's mech is 3 spaces away,  and the 1st 
                     space takes full damage, 7 - 2 = 4, so Tyler's mech takes 4d4 nuclear damage
-                    from the explosion. Charlie's mech is 5 spaces away from Abby's, thus Charlie's mech
+                    from the explosion. Charlie's mech is 4 spaces away from Abby's, thus Charlie's mech
                     takes no damage at all; even though Abby's generator is level 7, Charlie is out of the
-                    4 space maximum range for a nuclear explosion's damage. 
+                    3 space maximum range for a nuclear explosion's damage. 
                 </p>
             </div>
             <div class="subsystem">
@@ -365,7 +362,7 @@
                 <p class="rules">
                     A player may decide to retreat from combat rather than fighting it out. To retreat,
                     the player's mech must not have had weapon accuracy/target lock rolled against them 
-                    for the last 5 turns, and they must be on the edge of the map. 
+                    for the last 5 turns (hacking doesn't count), and they must be on the edge of the map. 
                 </p>
                 <p class="rules">
                     In terms of calculating victory and in determining order for reward cards at the 
@@ -373,7 +370,7 @@
                     out of the fight at the time of retreat.
                 </p>
                 <p class="rules">
-                    Successfuly retreating gives the player an additional +5 credits during the next build phase. 
+                    Successfully retreating gives the player an additional +5 credits during the next build phase. 
                 </p>
             </div>
         </div>
@@ -384,11 +381,9 @@
             <div class="subsystem">
                 <p class="rules">
                     Players can visually inspect an opponent's mech's weapon class and quantity 
-                    (ammo based, missile, etc.), and whether they have shields with a line of
-                    sight (LOS) of 7 hexes or less. 
-                    If they are in open terrain *Please declare to everyone, or the specifc player 
-                    you attack, what weapon(s) you are shooting them with.* Otherwise, LOS applies 
-                    at 3 range.
+                    (ballistic, missile, etc.), and whether they have shields, when you have LOS.
+					*Please declare to everyone, or the specific player you attack, what weapon(s)
+					you are shooting them with.*
                 </p>
             </div>
         </div>
