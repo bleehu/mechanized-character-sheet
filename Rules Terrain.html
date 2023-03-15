@@ -15,7 +15,7 @@
                         <tr>
                             <th></th>
                             <th>Shooting Out</th>
-                            <th>Shooting In</th>
+                            <th>Shooting Into/Through</th>
                             <th>Moving Penalty</th>
                             <th>Notes</th>
                         </tr>
@@ -31,40 +31,48 @@
                         <tr>
                             <td>
                                 <img src="img/terrain/forest light sing.png">
-                                <p>Light Forest</p>
+                                <p>Light Forest (lvl 1)</p>
                             </td>
                             <td> 0 </td> <td> -1 </td> <td> 1 Hex </td> <td>   </td>
                         </tr>
                         <tr>
                             <td>
-                                <img src="img/terrain/forest heavy single.png">
-                                <img src="img/terrain/Forest heavy single c.png">
-                                <p>Heavy Forest</p>
+                                <img src="img/terrain/forest medium single.png">
+                                <img src="img/terrain/forest medium single c.png">
+                                <p>Medium Forest (lvl 2)</p>
                             </td>
                             <td> -1 </td> <td> -2 </td> <td> 2 Hexes </td> <td>  </td>
+                        </tr>
+						<tr>
+                            <td>
+                                <img src="img/terrain/forest heavy single.png">
+                                <img src="img/terrain/Forest heavy single c.png">
+                                <p>Heavy Forest (lvl 3)</p>
+                            </td>
+                            <td> -2 </td> <td> -3 </td> <td> 3 Hexes </td> <td>  </td>
                         </tr>
                         <tr>
                             <td>
                                 <img src="img/terrain/Shallow Water Small.png">
                                 <p>Shallow Water</p>
                             </td>
-                            <td> -1 </td> <td> -1 </td> <td> 1 Hex </td> <td> Reduces incoming nuclear damage by 1d4. </td>
+                            <td> -1 </td> <td> -1 </td> <td> 1 Hex </td> <td> Reduces incoming nuclear damage by 1d4 (or a flat -1 if being hit by a TNM). </td>
                         </tr>
                         <tr>
                             <td>
                                 <img src="img/terrain/Medium Water Small.png">
                                 <p>Medium Water</p>
                             </td>
-                            <td> -2 </td> <td> -2 </td> <td> 2 Hexes </td> <td> Reduces incoming nuclear damage by 2d4. </td>
+                            <td> -2 </td> <td> -2 </td> <td> 2 Hexes </td> <td> Reduces incoming nuclear damage by 2d4 (or a flat -2 if being hit by a TNM). </td>
                         </tr>
                         <tr>
                             <td>
                                 <img src="img/terrain/Deep Water Small.png">
                                 <p>Deep Water</p>
                             </td>
-                            <td> -3 </td> <td> -3 </td> <td> 3 Hexes </td> 
+                            <td> -3 </td> <td> -3 </td> <td> 2 Hexes </td> 
                             <td> <p>
-                                Reduces incoming nuclear damage by 3d4. The intense pressure of water at this depth deals 1d4
+                                Reduces incoming nuclear damage by 3d4 (or a flat -3 if being hit by a TNM). The intense pressure of water at this depth deals 1d4
                                 damage that ignores shields at the end of the player's turn. 
                             </p></td>
                         </tr>
@@ -82,15 +90,39 @@
                             </td>
                             <td> None </td> <td> None </td> <td> 4 Hexes </td> <td>  </td>
                         </tr>
+						<tr>
+                            <td>
+                                <img src="img/terrain/light buildings hex.png">
+                                <p>Buildings</p>
+                            </td>
+                            <td> -1 </td> <td> -2 </td> <td> 2 Hexes </td> <td><p> 
+                                Light Buildings can be moved and shot through. A mech with Jump Jets or the Quantumn
+                                Teleporter can get on top of buildings. While on top of a building, a mech has a +1 to 
+                                accuracy rolls for targeting/being targeted by other mechs. 
+                            </p></td>
+                        </tr>
+						<tr>
+                            <td>
+                                <img src="img/terrain/medium buildings hex.png">
+                                <p>Buildings</p>
+                            </td>
+                            td> Cannot be shot out of </td> <td> Cannot be shot into/through </td> <td> Cannot be moved through </td> <td><p> 
+                                Medium-sized Buildings cannot be moved through or shot through. A mech with Jump Jets or the Quantumn
+                                Teleporter can get on top of buildings. While on top of a building, a mech has a +1 to 
+                                accuracy rolls for targeting/being targeted by other mechs. If you are next to this building and being targeted/targeting
+								with a MIRV artillery, the MIRV takes an additional -3 accuracy penalty (if relevant for the MIRV's firing line).
+                            </p></td>
+                        </tr>
                         <tr>
                             <td>
                                 <img src="img/terrain/heavy buildings hex.png">
                                 <p>Buildings</p>
                             </td>
-                            <td> +2 </td> <td> Cannot be shot through </td> <td> Cannot be moved through </td> <td><p> 
+                            <td> Cannot be shot out of </td> <td> Cannot be shot into/through </td> <td> Cannot be moved through </td> <td><p> 
                                 Buildings cannot be moved through or shot through. A mech with Jump Jets or the Quantumn
                                 Teleporter can get on top of buildings. While on top of a building, a mech has a +1 to 
-                                accuracy rolls, and all mechs targeting it get a +1. 
+                                accuracy rolls for targeting/being targeted by other mechs. If you are next to this building and being targeted/targeting
+								with a MIRV artillery, the MIRV takes an additional -4 accuracy penalty (if relevant for the MIRV's firing line).
                             </p></td>
                         </tr>
                         <tr>
@@ -120,6 +152,27 @@
                             <td> 0 </td> <td> 0 </td> <td> 0 </td> <td> <p>
                                 The Nuclear Sub has 10 hp. If you destroy the sub, it explodes as if it has a 
                                 generator level = 3 + (2* round#).
+                            </p>  </td>
+                        </tr>
+						<tr>
+                            <td>
+                                <img src="img/terrain/Gates.png">
+                                <p>Gates</p>
+                            </td>
+                            <td> N/A </td> <td> N/A </td> <td> 0 </td> <td> <p>
+                                The owner of the gate can open/close by using a move or attack action when adjacent (or succeeding a hack attempt). 
+								Closed gates restrict LOS. Attackers can open a gate by succeeding in a hack attempt with a -2 penalty. The gate 
+								pillars are treated as heavy structure.
+                            </p>  </td>
+                        </tr>
+						<tr>
+                            <td>
+                                <img src="img/terrain/Mountains.png">
+                                <p>Mountains</p>
+                            </td>
+                            <td> N/A </td> <td> N/A </td> <td> N/A </td> <td> <p>
+                                Blocks nuclear explosions, movement, and LOS. If you can target around the mountain from the explosion hex 
+								(see aiming rules), the explosion will go around the mountain.
                             </p>  </td>
                         </tr>
                     </tbody>
